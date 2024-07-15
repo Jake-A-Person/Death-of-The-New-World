@@ -1,0 +1,28 @@
+﻿NFR = {
+	states = {
+		STATE_LOUISIANA
+		STATE_ARKANSAS
+		STATE_MISSOURI
+		STATE_MISSISSIPPI
+		STATE_TENNESSEE
+		STATE_KENTUCKY
+		STATE_OHIO
+		STATE_INDIANA
+		STATE_MICHIGAN
+		STATE_WISCONSIN
+		STATE_MINNESOTA
+		STATE_MINNESOTA
+		STATE_IOWA
+		STATE_ILLINOIS
+		STATE_ONTARIO
+		STATE_QUEBEC
+		STATE_NEWFOUNDLAND
+	}
+		required_states_fraction = 0.75
+	
+		possible = {
+			has_technology_researched = pan-nationalism
+		}
+
+		ai_will_do = { always = yes }	
+}

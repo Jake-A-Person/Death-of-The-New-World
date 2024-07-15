@@ -1,0 +1,98 @@
+﻿namespace = dtnw_mis
+
+#start up event w/ LORE!!!!!!!!!!!!!!!! maybe?
+dtnw_mis.1{
+	type = country_event
+	placement = root
+	title = dtnw_mis.1.t
+	desc = dtnw_mis.1.d
+	flavor = dtnw_mis.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+		set_variable = mis_land_reform_var
+	}
+
+	option = {
+		name = dtnw_mis.1.a
+		default_option = yes
+
+		add_journal_entry = {
+			type = je_mis_land_reform
+		}
+
+	}
+}
+
+#did reform land
+dtnw_mis.2{
+	type = country_event
+	placement = root
+	title = dtnw_mis.2.t
+	desc = dtnw_mis.2.d
+	flavor = dtnw_mis.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = dtnw_mis.2.a
+
+		default_option = yes
+
+		add_loyalists = {
+			value = small_radicals
+			strata = poor
+		}
+	}
+}
+
+#failed reform land
+dtnw_mis.3{
+	type = country_event
+	placement = root
+	title = dtnw_mis.3.t
+	desc = dtnw_mis.3.d
+	flavor = dtnw_mis.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = dtnw_mis.3.a
+
+		default_option = yes
+
+		add_radicals = {
+			value = very_large_radicals
+			strata = poor
+		} 
+	}
+}

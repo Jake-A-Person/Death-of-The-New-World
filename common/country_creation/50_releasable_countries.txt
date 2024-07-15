@@ -1,0 +1,7 @@
+﻿MIS = {
+	states = { STATE_MISSOURI }
+	
+	required_num_states = 1 
+
+	ai_will_do = { always = no }
+}

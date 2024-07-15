@@ -1,0 +1,18 @@
+﻿# Alexander von Blade
+MIS_alexander_von_blade = {
+	first_name = "Alexander"
+	last_name = "von_Blade"
+	historical = no
+	culture = cu:yankee
+	ruler = yes
+	birth_date = 1766.1.6
+	dna = dna_jose_gaspar_rodriguez_de_francia #placeholder
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		ambitious
+		erudite
+	}
+	on_created = {	}
+	trait_generation = { }
+}

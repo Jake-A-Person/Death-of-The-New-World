@@ -1,0 +1,8 @@
+﻿CHARACTERS = {
+	c:MIS ?= {
+		create_character = {
+			template = MIS_alexander_von_blade
+		}
+	}
+}
+
