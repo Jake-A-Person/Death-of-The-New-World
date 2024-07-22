@@ -5,4 +5,58 @@
     		type = dominion
     	}
     }
+	c:WAH ?= {
+		create_diplomatic_pact = {
+    		country = c:ALA
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:ARK
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:FLR
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:GRG
+    		type = dominion
+    	}		
+		create_diplomatic_pact = {
+    		country = c:IWO
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:LOU
+    		type = dominion
+    	}		
+		create_diplomatic_pact = {
+    		country = c:MIP
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:NYR
+    		type = dominion
+    	}		
+		create_diplomatic_pact = {
+    		country = c:UOM
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:WIS
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:MWU
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:MIS
+    		type = dominion
+    	}
+		create_diplomatic_pact = {
+    		country = c:NYR
+    		type = dominion
+    	}
+	} 
 }

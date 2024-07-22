@@ -19,7 +19,7 @@ dtnw_mis.1{
 	}
 
 	immediate = {
-		set_variable = mis_land_reform_var
+
 	}
 
 	option = {

@@ -1,0 +1,158 @@
+﻿namespace = dtnw_sick_us
+
+#start up event w/ LORE!!!!!!!!!!!!!!!! maybe?
+dtnw_sick_us.1{
+	type = country_event
+	placement = root
+	title = dtnw_sick_us.1.t
+	desc = dtnw_sick_us.1.d
+	flavor = dtnw_sick_us.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = dtnw_sick_us.1.a
+		default_option = yes
+
+		add_journal_entry = {
+			type = je_sick_us
+		}
+		add_journal_entry = {
+			type = je_sick_us_slavery
+		}
+	}
+}
+#free slaves master event
+dtnw_sick_us.2{
+	type = country_event
+	placement = root
+	title = dtnw_sick_us.2.t
+	desc = dtnw_sick_us.2.d
+	flavor = dtnw_sick_us.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = dtnw_sick_us.2.a
+		default_option = yes
+		every_subject_or_below = {
+		   trigger_event = dtnw_sick_us.21
+	   }
+	}
+}
+#free slaves subject event
+dtnw_sick_us.21{
+
+	type = country_event
+	placement = root
+	title = dtnw_sick_us.21.t
+	desc = dtnw_sick_us.21.d
+	flavor = dtnw_sick_us.21.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+	}
+
+	#has slaves banned
+	option = {	
+		trigger = {
+			has_law = law_type:law_slavery_banned
+		}
+		name = dtnw_sick_us.21.a
+		default_option = yes
+	}
+
+
+	#civl war
+	option = {	
+		trigger = {
+			not = {
+				has_law = law_type:law_slavery_banned
+			}
+		}
+		name = dtnw_sick_us.21.b
+		default_option = yes
+		#not an error just new in 1.7
+		add_liberty_desire = 100
+		change_relations = {
+			country = overlord
+			value = -100
+		}
+		if = {
+			limit = {
+					NOT = {has_variable = sick_us_civl_war}
+				}
+		add_journal_entry = {type = je_civl_war_start}
+		}
+	}
+
+	#ban slaves
+	option = {	
+		trigger = {
+			not = {
+				has_law = law_type:law_slavery_banned
+			}
+		}
+		name = dtnw_sick_us.21.c
+	}
+}
+
+
+#slave trade/debt
+dtnw_sick_us.3{
+	type = country_event
+	placement = root
+	title = dtnw_sick_us.3.t
+	desc = dtnw_sick_us.3.d
+	flavor = dtnw_sick_us.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = dtnw_sick_us.3.a
+	}
+}

@@ -1002,7 +1002,7 @@
 	s:STATE_HAWAIIAN_ISLANDS = {
 		region_state:HAW = {
 			create_pop = {
-				pop_type = clergy
+				pop_type = clergymen #TODO fix? was clergy
 				culture = yankee
 				religion = protestant
 				size = 100

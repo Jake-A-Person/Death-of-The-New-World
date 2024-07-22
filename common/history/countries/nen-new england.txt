@@ -24,6 +24,9 @@
 
 		ig:ig_intelligentsia = {
 			add_ruling_interest_group = yes
-		}		
+		}	
+		
+		trigger_event = dtnw_nen.1
+
 	}
 }

@@ -1,0 +1,137 @@
+﻿# state of the union
+je_sick_us = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+
+   immediate = {
+	set_variable = {
+		name = sick_us_var
+		value = 2
+	}
+   }
+   
+	possible = {
+	}
+
+	complete = {
+		AND = {
+			scope:journal_entry = {
+				is_goal_complete =  yes
+			}
+			has_variable = sick_us_slave_solved
+		}
+
+	}
+
+	fail = {
+		var:sick_us_var <= 0
+	}
+
+	on_fail = {
+		#fire event falied us
+		every_subject_or_below = {
+			make_independent = yes
+		}
+	}
+	
+	on_complete = {
+		#yay
+	}
+	
+	current_value = {
+		value = var:sick_us_var
+	}
+
+	goal_add_value = {
+		add = 4
+	}
+
+	progressbar = yes
+
+	weight = 10000
+}
+# state of slavry
+je_sick_us_slavery = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+   
+	possible = {
+	}
+
+	complete = {
+	}
+
+	on_complete = {
+		set_variable = { name =  sick_us_slave_solved }
+	}
+	
+	on_timeout = {
+		#fail
+		trigger_event = {
+			id = dtnw_mis.3
+		}
+	}
+	
+	scripted_button = je_sick_us_button_trade_slaves
+	scripted_button = je_sick_us_button_free_slaves
+
+
+	weight = 10000
+}
+
+je_civl_war = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+	group = je_group_internal_affairs
+
+	immediate = {
+	}
+	
+	 possible = {
+	 }
+ 
+	 complete = {
+	 }
+ 
+	 on_complete = {
+	 }
+	 
+	 on_timeout = {
+
+	 }
+ 
+ 
+	 weight = 10000
+}
+#for the 1st suject to chose civl war
+je_civl_war_start = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+	group = je_group_internal_affairs
+	
+	immediate = {
+	set_variable = sick_us_civl_war
+	}
+
+	 possible = {
+	 }
+ 
+	 complete = {
+	 }
+ 
+	 on_complete = {
+	 }
+	 
+	 on_timeout = {
+		create_diplomatic_play = {
+			type = dp_independence
+			target_country = overlord
+		}
+	 }
+ 
+	 timeout = 32
+ 
+	 weight = 10000
+}

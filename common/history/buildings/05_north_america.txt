@@ -258,7 +258,7 @@
 			has_american_buildings_dlc_trigger = yes
 		}
 		s:STATE_NEW_YORK={
-			region_state:USA={
+			region_state:WAH={
 				create_building={
 					building="building_central_park"
 					level=1
@@ -267,12 +267,12 @@
 		}
 	}
 	s:STATE_VIRGINIA={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 					}
 				}
@@ -284,12 +284,12 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_VIRGINIA"
 					}
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -301,7 +301,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_VIRGINIA"
 					}
@@ -314,13 +314,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_VIRGINIA"
 					}
 					building={
 						type="building_maize_farm"
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 						region="STATE_VIRGINIA"
 					}						
@@ -333,7 +333,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_VIRGINIA"
 					}
@@ -346,7 +346,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=4
 						region="STATE_VIRGINIA"
 					}
@@ -359,7 +359,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=7
 						region="STATE_VIRGINIA"
 					}
@@ -372,7 +372,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_VIRGINIA"
 					}
@@ -384,7 +384,7 @@
 				building="building_military_shipyards"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -395,7 +395,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 					}
 				}
@@ -455,20 +455,14 @@
 		}
 		region_state:UTE={
 		}
-		region_state:USA={
-		}
 	}
 	s:STATE_WYOMING={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 		region_state:ARP={
 		}
 	}
 	s:STATE_MONTANA={
-		region_state:USA={
-		}
 		region_state:ABS={
 		}
 		region_state:LKT={
@@ -477,28 +471,21 @@
 		}
 	}
 	s:STATE_NORTH_DAKOTA={
-		region_state:USA={
-		}
+
 		region_state:LKT={
 		}
 	}
 	s:STATE_SOUTH_DAKOTA={
 		region_state:LKT={
 		}
-		region_state:USA={
-		}
 	}
 	s:STATE_NEBRASKA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 		region_state:PWN={
 		}
 	}
 	s:STATE_KANSAS={
-		region_state:USA={
-		}
 		region_state:PWN={
 		}
 		region_state:COM={
@@ -618,8 +605,6 @@
 		}
 	}
 	s:STATE_MINNESOTA={
-		region_state:USA={
-		}
 		region_state:LKT={
 		}
 	}
@@ -1319,13 +1304,13 @@
 		}
 	}
 	s:STATE_WEST_VIRGINIA={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 						region="STATE_WEST_VIRGINIA"
 					}
@@ -1338,7 +1323,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_WEST_VIRGINIA"
 					}
@@ -1349,12 +1334,12 @@
 		}
 	}
 	s:STATE_MARYLAND={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -1366,7 +1351,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_MARYLAND"
 					}
@@ -1379,7 +1364,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 						region="STATE_MARYLAND"
 					}
@@ -1392,7 +1377,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=4
 						region="STATE_MARYLAND"
 					}
@@ -1404,7 +1389,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 					}
 				}
@@ -1414,12 +1399,12 @@
 		}
 	}
 	s:STATE_DELAWARE={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -1431,7 +1416,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_DELAWARE"
 					}
@@ -1444,7 +1429,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_DELAWARE"
 					}
@@ -1455,12 +1440,12 @@
 		}
 	}
 	s:STATE_PENNSYLVANIA={
-		region_state:USA={
+		region_state:NYR={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NYR"
 						levels=3
 					}
 				}
@@ -1472,7 +1457,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1484,7 +1469,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 					}
 				}
@@ -1496,7 +1481,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1509,13 +1494,13 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1527,7 +1512,7 @@
 				building="building_munition_plants"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NYR"
 						levels=1
 					}
 				}
@@ -1539,7 +1524,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=1
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1552,7 +1537,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=4
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1565,13 +1550,13 @@
 				add_ownership={
 					building={
 						type="building_maize_farm"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:NYR"
 						levels=1
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1584,7 +1569,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1597,7 +1582,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1610,7 +1595,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1623,13 +1608,13 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:NYR"
 						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:NYR"
 						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1642,13 +1627,13 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:USA"
+						country="c:NYR"
 						levels=2
 						region="STATE_PENNSYLVANIA"
 					}
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=3
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1661,7 +1646,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NYR"
 						levels=1
 						region="STATE_PENNSYLVANIA"
 					}
@@ -1672,18 +1657,18 @@
 		}
 	}
 	s:STATE_NEW_JERSEY={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_paper_mills"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_NEW_JERSEY"
 					}
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 					}
 				}
@@ -1694,7 +1679,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -1706,7 +1691,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_NEW_JERSEY"
 					}
@@ -1719,7 +1704,7 @@
 				add_ownership={
 					building={
 						type="building_maize_farm"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_NEW_JERSEY"
 					}
@@ -1732,7 +1717,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_NEW_JERSEY"
 					}
@@ -2010,12 +1995,12 @@
 		}
 	}
 	s:STATE_NEW_HAMPSHIRE={
-		region_state:USA={
+		region_state:NEN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 					}
 				}
@@ -2027,7 +2012,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 						region="STATE_NEW_HAMPSHIRE"
 					}
@@ -2040,7 +2025,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 						region="STATE_NEW_HAMPSHIRE"
 					}
@@ -2051,13 +2036,13 @@
 		}
 	}
 	s:STATE_VERMONT={
-		region_state:USA={
+		region_state:NEN={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:USA"
+						country="c:NEN"
 						levels=2
 						region="STATE_VERMONT"
 					}
@@ -2070,7 +2055,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 						region="STATE_VERMONT"
 					}
@@ -2083,7 +2068,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 						region="STATE_VERMONT"
 					}
@@ -2094,12 +2079,12 @@
 		}
 	}
 	s:STATE_MAINE={
-		region_state:USA={
+		region_state:NEN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 					}
 				}
@@ -2111,7 +2096,7 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 						region="STATE_MAINE"
 					}
@@ -2124,7 +2109,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NEN"
 						levels=3
 						region="STATE_MAINE"
 					}
@@ -2137,7 +2122,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:NEN"
 						levels=2
 						region="STATE_MAINE"
 					}
@@ -2150,7 +2135,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:USA"
+						country="c:NEN"
 						levels=3
 						region="STATE_MAINE"
 					}
@@ -2162,7 +2147,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:NEN"
 						levels=1
 					}
 				}
@@ -2172,12 +2157,12 @@
 		}
 	}
 	s:STATE_NORTH_CAROLINA={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 					}
 				}
@@ -2189,7 +2174,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_NORTH_CAROLINA"
 					}
@@ -2202,7 +2187,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_NORTH_CAROLINA"
 					}
@@ -2215,7 +2200,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 						region="STATE_NORTH_CAROLINA"
 					}
@@ -2228,13 +2213,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_NORTH_CAROLINA"
 					}
 					building={
 						type="building_maize_farm"
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 						region="STATE_NORTH_CAROLINA"
 					}
@@ -2247,7 +2232,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=10
 						region="STATE_NORTH_CAROLINA"
 					}
@@ -2259,7 +2244,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}
@@ -2277,12 +2262,12 @@
 		}
 	}
 	s:STATE_SOUTH_CAROLINA={
-		region_state:USA={
+		region_state:WAH={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 					}
 				}
@@ -2294,7 +2279,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=10
 						region="STATE_SOUTH_CAROLINA"
 					}
@@ -2307,7 +2292,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=5
 						region="STATE_SOUTH_CAROLINA"
 					}
@@ -2320,7 +2305,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_SOUTH_CAROLINA"
 					}
@@ -2333,13 +2318,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:USA"
+						country="c:WAH"
 						levels=2
 						region="STATE_SOUTH_CAROLINA"
 					}
 					building={
 						type="building_maize_farm"
-						country="c:USA"
+						country="c:WAH"
 						levels=3
 						region="STATE_SOUTH_CAROLINA"
 					}						
@@ -2351,7 +2336,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:WAH"
 						levels=1
 					}
 				}

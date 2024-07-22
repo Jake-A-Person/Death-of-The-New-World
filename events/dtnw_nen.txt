@@ -1,0 +1,39 @@
+﻿namespace = dtnw_nen
+
+#start up event w/ LORE!!!!!!!!!!!!!!!! maybe?
+dtnw_nen.1{
+	type = country_event
+	placement = root
+	title = dtnw_nen.1.t
+	desc = dtnw_nen.1.d
+	flavor = dtnw_nen.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+		
+	}
+
+	#go with canada
+	option = {
+		name = dtnw_nen.1.a
+		default_option = yes
+
+		remove_primary_culture = cu:yankee
+	}
+
+	#go with the yankees
+	option = {
+		name = dtnw_nen.1.b
+
+		remove_primary_culture = cu:anglo_canadian
+	}
+}

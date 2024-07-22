@@ -108,6 +108,19 @@ WIS = {
 
 }
 
+#copyed from files TODO if worng see here
+NEN = {
+	color = { 166  224  85 }
+	
+	country_type = colonial
+	
+	tier = grand_principality
+	
+	cultures = { yankee anglo_canadian }
+	capital = STATE_MASSACHUSETTS
+
+}
+
 #new frace
 NFR = {
 	color = { 20  50  210 }
