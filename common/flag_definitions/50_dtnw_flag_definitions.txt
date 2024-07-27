@@ -1,0 +1,55 @@
+﻿
+WAH = { # Washington
+	flag_definition = {
+		coa = WAH
+		#subject_canton = WAH
+		priority = 1
+	}
+}
+
+MIS = {
+	flag_definition = {
+		coa = MIS
+		subject_canton = MIS
+		priority = 1
+	}
+}
+
+NYR = {	
+	flag_definition = {
+	coa = NYR
+	subject_canton = NYR
+	priority = 1
+	}
+}
+
+ARK = {
+	flag_definition = {
+		coa = ARK
+		subject_canton = ARK
+		priority = 1
+		}
+}
+
+MIP = {
+	flag_definition = {
+		coa = MIP
+		subject_canton = MIP
+		priority = 1
+		}
+}
+
+ALA = {
+	flag_definition = {
+		coa = ALA
+		subject_canton = ALA
+		priority = 1
+		}
+}
+IOW = {
+	flag_definition = {
+		coa = IOW
+		subject_canton = IOW
+		priority = 1
+		}
+}

@@ -1,0 +1,34 @@
+﻿namespace = dtnw_mex
+
+#start up event w/ LORE!!!!!!!!!!!!!!!! maybe?
+dtnw_mex.1{
+	type = country_event
+	placement = root
+	title = dtnw_mex.1.t
+	desc = dtnw_mex.1.d
+	flavor = dtnw_mex.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = dtnw_mex.1.a
+		default_option = yes
+
+		add_journal_entry = {
+			type = je_mex_deal_with_sates
+		}
+
+	}
+}

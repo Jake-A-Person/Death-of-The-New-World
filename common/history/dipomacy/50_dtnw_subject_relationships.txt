@@ -8,55 +8,55 @@
 	c:WAH ?= {
 		create_diplomatic_pact = {
     		country = c:ALA
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:ARK
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:FLR
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:GRG
-    		type = dominion
+    		type = protectorate
     	}		
 		create_diplomatic_pact = {
     		country = c:IWO
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:LOU
-    		type = dominion
+    		type = protectorate
     	}		
 		create_diplomatic_pact = {
     		country = c:MIP
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:NYR
-    		type = dominion
+    		type = protectorate
     	}		
 		create_diplomatic_pact = {
     		country = c:UOM
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:WIS
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:MWU
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:MIS
-    		type = dominion
+    		type = protectorate
     	}
 		create_diplomatic_pact = {
     		country = c:NYR
-    		type = dominion
+    		type = protectorate
     	}
 	} 
 }

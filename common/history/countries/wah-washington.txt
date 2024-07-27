@@ -5,7 +5,7 @@
 		
 		set_market_capital = STATE_DISTRICT_OF_COLUMBIA
 						
-        #same as us but with out colonialisum
+        #same as us ish
 		effect_starting_politics_liberal = yes
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_racial_segregation        
@@ -16,6 +16,7 @@
         activate_law = law_type:law_per_capita_based_taxation
         activate_law = law_type:law_national_militia
 		activate_law = law_type:law_legacy_slavery
+		activate_law = law_type:law_colonial_exploitation # florida!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   		set_institution_investment_level = {
     		institution = institution_schools

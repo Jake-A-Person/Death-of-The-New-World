@@ -1,0 +1,143 @@
+﻿dtnw_mis_union_with_natives_decision = {
+	is_shown = {
+		exists = c:MIS
+		this = c:MIS
+	}
+
+	possible = {
+		this = c:MIS
+		has_law = law_type:law_multicultural
+	}
+
+	when_taken = {
+		change_tag = MNA	
+	}
+
+	ai_chance = {
+		base = 1000		
+	}
+}
+
+dtnw_deal_with_mexico = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:MIS
+				this = c:MIS
+
+			}
+			AND = {
+				exists = c:LOU
+				this = c:LOU
+
+			}		
+		}
+	}
+
+	possible = {
+		has_law = law_type:law_slavery_banned
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = union_with_mexico
+		}
+	}
+
+	ai_chance = {
+		base = 1000		
+	}
+
+}
+
+dtnw_stop_deal_with_mexico = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:MIS
+				this = c:MIS
+
+			}
+			AND = {
+				exists = c:LOU
+				this = c:LOU
+
+			}		
+		}
+		
+	}
+
+	possible = {
+		has_law = law_type:law_slavery_banned
+	}
+
+	when_taken = {
+		# remove_modifier = {
+		# 	name = union_with_mexico
+		# }
+	}
+
+	ai_chance = {
+		base = 0		
+	}
+
+}
+
+dtnw_accecpt_former_states = {
+	is_shown = {
+		exists = c:MEX
+		this = c:MEX
+	}
+
+	possible = {
+		is_at_war = no
+		is_diplomatic_play_initiator = no
+		OR = {
+			c:LOU  = {
+				has_modifier = union_with_mexico
+			}
+			c:MIS  = {
+				has_modifier = union_with_mexico
+			}
+		}
+
+	}
+
+	when_taken = {
+		# c:LOU  = {
+		# 	remove_modifier = union_with_mexico
+		# }
+		# c:MIS  = {
+		# 	remove_modifier = union_with_mexico
+		# }
+		if = {
+			limit = { c:LOU = {	has_modifier = union_with_mexico } }
+		c:LOU = {
+			make_independent = yes
+		}
+		create_diplomatic_pact = {
+			country = c:LOU
+			type = protectorate
+		}
+
+		}
+		if = {
+			limit = { c:MIS = {	has_modifier = union_with_mexico } }
+		c:MIS = {
+			make_independent = yes
+		}
+		create_diplomatic_pact = {
+			country = c:MIS
+			type = protectorate
+		}
+	}
+
+			c:WAH = {
+			trigger_event = dtnw_sick_us.4
+		}
+	}
+
+	ai_chance = {
+		base = 1000
+	}
+}

@@ -156,3 +156,186 @@ dtnw_sick_us.3{
 		name = dtnw_sick_us.3.a
 	}
 }
+#mexican war
+dtnw_sick_us.4{
+	placement = root
+	title = dtnw_sick_us.4.t
+	desc = dtnw_sick_us.4.d
+	flavor = dtnw_sick_us.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	duration = 1
+
+	trigger = {
+
+	}
+
+	immediate = {
+		if = {
+			limit = { c:LOU = {	has_modifier = union_with_mexico } }
+			create_country = {
+			tag = LOL
+			origin = c:LOU
+
+			province = p:x13B0C7
+			}
+			create_diplomatic_pact = {
+			country = c:LOL
+			type = protectorate
+			}
+		}
+
+		if = {
+			limit = { c:LOU = {	has_modifier = union_with_mexico } }
+			create_country = {
+			tag = MIL
+			origin = c:MIS
+
+			province = p:x50C080
+			}
+			create_diplomatic_pact = {
+			country = c:mil
+			type = protectorate
+			}
+		}
+		
+		#both
+		if = {
+			limit = { AND = {
+				c:LOU = {	has_modifier = union_with_mexico }
+				c:MIS = {	has_modifier = union_with_mexico }}  }
+		create_diplomatic_play = {
+
+			name = mex
+			type = dp_humiliation
+
+			target_country = c:MEX
+
+			escalation = 40
+
+			war = no
+
+			add_target_backers = {
+				c:MEX
+				c:MIS
+				c:LOU
+			}
+
+			add_initiator_backers = {
+				c:WAH
+				c:MIL
+				c:LOL
+			}
+			
+			add_war_goal = {
+				holder = c:MIS
+				type = conquer_state
+				target_country = C:MIL
+			}
+			add_war_goal = {
+				holder = C:MIL
+				type = conquer_state
+				target_country = c:MIS
+			}
+			add_war_goal = {
+				holder = c:LOU
+				type = conquer_state
+				target_country = c:LOL
+			}
+			add_war_goal = {
+				holder = c:LOL
+				type = conquer_state
+				target_country = c:LOU
+			}
+		}
+	}
+	if = {
+		limit = { AND = {
+			NOT = { c:LOU = {	has_modifier = union_with_mexico } }
+			c:MIS = {	has_modifier = union_with_mexico }}  }
+			create_diplomatic_play = {
+
+				name = mex
+				type = dp_humiliation
+	
+				target_country = c:MEX
+	
+				escalation = 40
+	
+				war = no
+	
+				add_target_backers = {
+					c:MEX
+					c:MIS
+				}
+	
+				add_initiator_backers = {
+					c:WAH
+					c:MIL
+				}
+				
+				add_war_goal = {
+					holder = c:MIS
+					type = conquer_state
+					target_country = C:MIL
+				}
+				add_war_goal = {
+					holder = C:MIL
+					type = conquer_state
+					target_country = c:MIS
+				}
+			}
+		}
+		if = {
+			limit = { AND = {
+				NOT = { c:MIS = {	has_modifier = union_with_mexico } }
+				c:LOU = {	has_modifier = union_with_mexico }}  }
+				create_diplomatic_play = {
+	
+					name = mex
+					type = dp_humiliation
+		
+					target_country = c:MEX
+		
+					escalation = 40
+		
+					war = no
+		
+					add_target_backers = {
+						c:MEX
+						c:LOU
+					}
+		
+					add_initiator_backers = {
+						c:WAH
+						c:LOL
+					}
+					
+					add_war_goal = {
+						holder = c:LOU
+						type = conquer_state
+						target_country = C:LOL
+					}
+					add_war_goal = {
+						holder = C:LOL
+						type = conquer_state
+						target_country = c:LOU
+					}
+				}
+			}
+	
+
+	}
+
+	option = {
+
+		c:USA = {
+			add_journal_entry = {
+				type = je_sick_us_mexcio
+			}
+		}
+	}
+}

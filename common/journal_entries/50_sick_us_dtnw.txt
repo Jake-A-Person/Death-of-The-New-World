@@ -51,6 +51,53 @@ je_sick_us = {
 
 	weight = 10000
 }
+
+je_sick_us_mexcio = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+   
+	possible = {
+	}
+
+	immediate = {
+	}
+
+	complete = {
+		AND = {
+			is_diplomatic_play_initiator = no
+			is_at_war = no
+			#won war
+			AND = {
+				OR = { NOT = {exists = c:LOU} NOT = {c:LOU={has_modifier = union_with_mexico}} }
+				OR = { NOT = {exists = c:MIS} NOT = {c:MIS={has_modifier = union_with_mexico}} }			}
+		}
+	}
+
+	fail = {
+		is_diplomatic_play_initiator = no
+		is_at_war = no
+		NOT = {c:LOU = {overload = root}}
+		NOT = {c:MIS = {overload = root}}
+	}
+
+	on_complete = {
+	}
+
+	on_fail = {
+		change_variable = {
+			name = sick_us_var
+			add = 1
+		}
+	}
+	
+	on_timeout = {
+
+	}
+
+	weight = 10000
+}
+
 # state of slavry
 je_sick_us_slavery = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"

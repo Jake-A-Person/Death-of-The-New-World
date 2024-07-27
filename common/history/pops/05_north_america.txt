@@ -193,7 +193,7 @@
 		region_state:MEX = {
 			create_pop = {
 				culture = siouan
-				size = 2000
+				size = 3100
 			}
 			create_pop = {
 				culture = mexican
@@ -216,28 +216,12 @@
 				size = 4000
 			}
 		}
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 1200
-			}
-			create_pop = {
-				culture = yankee
-				size = 600
-			}
-		}
 	}
 	s:STATE_WYOMING = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 8000
-			}
-		}
 		region_state:LKT = {
 			create_pop = {
 				culture = siouan
-				size = 6000
+				size = 14000
 			}
 		}
 		region_state:ARP = {
@@ -266,20 +250,10 @@
 		}
 	}
 	s:STATE_MONTANA = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 5000
-			}
-			create_pop = {
-				culture = dakota
-				size = 2000
-			}
-		}
 		region_state:ABS = {
 			create_pop = {
 				culture = siouan
-				size = 28000
+				size = 33000
 			}
 		}
 		region_state:LKT = {
@@ -302,12 +276,6 @@
 		}
 	}
 	s:STATE_NORTH_DAKOTA = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 6000
-			}
-		}
 		# DKT had 22000
 		region_state:LKT = {
 			create_pop = {
@@ -316,7 +284,7 @@
 			}
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 10000
 			}
 		}
 	}
@@ -324,24 +292,12 @@
 		region_state:LKT = {
 			create_pop = {
 				culture = dakota
-				size = 34000
-			}
-		}
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 4000
+				size = 38000
 			}
 		}
 		# DKT has 12000
 	}
 	s:STATE_NEBRASKA = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 4000
-			}
-		}
 		region_state:LKT = {
 			create_pop = {
 				culture = dakota
@@ -355,17 +311,11 @@
 			}
 			create_pop = {
 				culture = siouan
-				size = 2000
+				size = 6000
 			}
 		}
 	}
 	s:STATE_KANSAS = {
-		region_state:USA = {
-			create_pop = {
-				culture = siouan
-				size = 12000
-			}
-		}
 		region_state:PWN = {
 			create_pop = {
 				culture = caddoan
@@ -375,7 +325,7 @@
 		region_state:COM = {
 			create_pop = {
 				culture = siouan
-				size = 4000
+				size = 16000
 			}
 		}
 	}
@@ -483,16 +433,10 @@
 		}
 	}
 	s:STATE_MINNESOTA = {
-		region_state:USA = {
-			create_pop = {
-				culture = algonquian
-				size = 16000
-			}
-		}
 		region_state:LKT = {
 			create_pop = {
 				culture = dakota
-				size = 22000
+				size = 40000
 			}
 		}
 	}
@@ -509,7 +453,7 @@
 		}
 	}
 	s:STATE_INDIANA = {
-		region_state:MWU = {
+		region_state:INI = {
 			create_pop = {
 				culture = yankee
 				size = 631504
@@ -554,7 +498,7 @@
 		}
 	}
 	s:STATE_OHIO = {
-		region_state:MWU = {
+		region_state:OHI = {
 			create_pop = {
 				culture = yankee
 				size = 1092200
@@ -574,7 +518,7 @@
 		}
 	}
 	s:STATE_KENTUCKY = {
-		region_state:MWU = {
+		region_state:KEN = {
 			create_pop = {
 				culture = dixie
 				size = 239988
@@ -599,7 +543,7 @@
 		}
 	}
 	s:STATE_TENNESSEE = {
-		region_state:MWU = {
+		region_state:TEN = {
 			create_pop = {
 				culture = dixie
 				size = 369604
@@ -679,29 +623,25 @@
 		}
 	}
 	s:STATE_FLORIDA = {
-		region_state:FLR = {
-			create_pop = {
-				culture = dixie
-				size = 47996
-			}
-			create_pop = {
-				culture = afro_american
-				size = 817 # unknown free population in 1830, 817 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 31183
-			}
+		region_state:SPA = {
 			create_pop = {
 				culture = muskogean
-				size = 3000
+				size = 100
+			}
+			create_pop = {
+				culture = spanish
+				size = 1000
+			}
+		region_state:WAH = {
+			create_pop = {
+				culture = muskogean
+				size = 100
 			}
 		}
 		region_state:SML = {
 			create_pop = {
 				culture = muskogean
-				size = 5000
+				size = 7800
 			}
 		}
 	}
@@ -843,7 +783,7 @@
 		}
 	}
 	s:STATE_ILLINOIS = {
-		region_state:MWU = {
+		region_state:ILL = {
 			create_pop = {
 				culture = yankee
 				size = 452400
