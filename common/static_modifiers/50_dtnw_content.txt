@@ -4,7 +4,7 @@
 shell_of_us={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_bureaucracy_add = -600
-	country_prestige_add = 100
+	country_prestige_add = 40
 	
 }
 #TODO

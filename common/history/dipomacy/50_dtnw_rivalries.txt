@@ -1,0 +1,14 @@
+﻿DIPLOMACY = {
+	c:WAH ?= {
+		create_diplomatic_pact = {
+			country = c:SPA
+			type = rivalry
+		}
+	}
+	c:SPA ?= {
+		create_diplomatic_pact = {
+			country = c:WAH
+			type = rivalry
+		}
+	}
+}	

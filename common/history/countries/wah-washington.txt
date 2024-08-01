@@ -22,7 +22,10 @@
     		institution = institution_schools
 	    	level = 2
 		}
-
+		
+		add_modifier = {
+			name = shell_of_us
+		}
 
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes

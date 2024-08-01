@@ -35,9 +35,6 @@ dtnw_sick_us.1{
 		add_journal_entry = {
 			type = je_sick_us_spain
 		}
-		add_modifier = {
-			name = shell_of_us
-		}
 	}
 }
 #free slaves master event

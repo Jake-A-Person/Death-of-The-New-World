@@ -23,7 +23,7 @@
     		type = protectorate
     	}		
 		create_diplomatic_pact = {
-    		country = c:IWO
+    		country = c:IOW
     		type = protectorate
     	}
 		create_diplomatic_pact = {
@@ -56,6 +56,26 @@
     	}
 		create_diplomatic_pact = {
     		country = c:NYR
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:TEN
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:KEN
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:OHI
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:IND
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:ILL
     		type = protectorate
     	}
 	} 

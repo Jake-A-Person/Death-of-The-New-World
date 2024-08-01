@@ -1,0 +1,15 @@
+﻿POWER_BLOCS = {
+	# USA
+	c:WAH = {
+		create_power_bloc = {
+			#USA was taken
+			name = USAPB
+
+			map_color = { 20  20  240 }
+
+			founding_date = 1776.07.04
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+		}
+	}
+}
