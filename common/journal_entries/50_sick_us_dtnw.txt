@@ -7,7 +7,7 @@ je_sick_us = {
    immediate = {
 	set_variable = {
 		name = sick_us_var
-		value = 2
+		value = 0
 	}
    }
    
@@ -25,7 +25,7 @@ je_sick_us = {
 	}
 
 	fail = {
-		var:sick_us_var <= 0
+		var:sick_us_var >= 2
 	}
 
 	on_fail = {
@@ -33,6 +33,7 @@ je_sick_us = {
 		every_subject_or_below = {
 			make_independent = yes
 		}
+		remove_modifier = shell_of_us
 	}
 	
 	on_complete = {
@@ -44,7 +45,7 @@ je_sick_us = {
 	}
 
 	goal_add_value = {
-		add = 4
+		add = 2
 	}
 
 	progressbar = yes
@@ -53,7 +54,7 @@ je_sick_us = {
 }
 
 je_sick_us_mexcio = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
+icon = "gfx/interface/icons/event_icons/event_election.dds"
 	
    group = je_group_internal_affairs
    
@@ -65,29 +66,63 @@ je_sick_us_mexcio = {
 
 	complete = {
 		AND = {
-			is_diplomatic_play_initiator = no
 			is_at_war = no
+			is_diplomatic_play_committed_participant = no
 			#won war
-			AND = {
-				OR = { NOT = {exists = c:LOU} NOT = {c:LOU={has_modifier = union_with_mexico}} }
-				OR = { NOT = {exists = c:MIS} NOT = {c:MIS={has_modifier = union_with_mexico}} }			}
-		}
+			OR = {
+				NOT = {exists = c:LOU}
+				c:LOU = { overlord = c:WAH }
+			}
+			OR = {
+				NOT = {exists = c:MIS}
+				c:MIS = { overlord = c:WAH }
+			}	
+			}
 	}
 
 	fail = {
-		is_diplomatic_play_initiator = no
+		AND = {
 		is_at_war = no
-		NOT = {c:LOU = {overload = root}}
-		NOT = {c:MIS = {overload = root}}
+		is_diplomatic_play_committed_participant = no
+		
+		OR = {
+			exists = c:LOU
+			c:LOU = { overlord = c:MEX }
+			NOT = {c:LOU = { has_modifier = union_with_mexico }}
+		}
+		OR = {
+			exists = c:MIS
+			c:MIS = { overlord = c:MEX }
+			NOT = {c:MIS = { has_modifier = union_with_mexico }}
+		}
+		}
 	}
 
+	#change tag of loyalists
 	on_complete = {
+		if = {
+			limit = {NOT = {exists = c:LOU}}
+			c:LOL = {change_tag = LOU}
+		}
+		if = {
+			limit = {NOT = {exists = c:MIS}}
+			c:MIL = {change_tag = MIS}
+		}
 	}
 
 	on_fail = {
 		change_variable = {
 			name = sick_us_var
 			add = 1
+		}
+		#add homeland jes to loyaists
+		c:LOL = {add_journal_entry = {type = je_home_land_lol}}
+		c:MIL = {add_journal_entry = {type = je_home_land_mil}}
+		c:MIS = {
+			remove_modifier = union_with_mexico
+		}
+		c:LOU = {
+			remove_modifier = union_with_mexico
 		}
 	}
 	
@@ -96,6 +131,30 @@ je_sick_us_mexcio = {
 	}
 
 	weight = 10000
+}
+
+je_sick_us_spain = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+   
+	possible = {
+	}
+
+	immediate = {
+	}
+	complete = {
+		NOT = {c:SPA = { has_claim = s:STATE_FLORIDA }}
+	}
+	fail = {
+		NOT = {has_claim = s:STATE_FLORIDA}
+	}
+	on_fail = {
+		change_variable = {
+			name = sick_us_var
+			add = 1
+		}
+	}
 }
 
 # state of slavry

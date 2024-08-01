@@ -1,11 +1,13 @@
 ﻿COUNTRIES = {
-	c:IOW ?= {
+	c:ILL ?= {
 		
 	effect_starting_technology_tier_2_tech = yes
 	
-	set_market_capital = STATE_IOWA
+	#something something only there
+	set_market_capital = STATE_ILLINOIS
 					
-	#same as the other south states with col
+	#same as the other south states
+	
 	effect_starting_politics_liberal = yes
 	activate_law = law_type:law_landed_voting
 	activate_law = law_type:law_tenant_farmers
@@ -17,16 +19,15 @@
 	activate_law = law_type:law_per_capita_based_taxation
 	activate_law = law_type:law_national_militia
 	activate_law = law_type:law_slave_trade
-	activate_law = law_type:law_frontier_colonization
 
 	  set_institution_investment_level = {
 		institution = institution_schools
 		level = 2
-	}
+		}
 
 
 	ig:ig_landowners = {
 		add_ruling_interest_group = yes
 	}
-}
+	}
 }

@@ -441,14 +441,10 @@
 		}
 	}
 	s:STATE_WISCONSIN = {
-		region_state:WIS = {
+		region_state:LKT = {
 			create_pop = {
 				culture = algonquian
-				size = 8000
-			}
-			create_pop = {
-				culture = yankee
-				size = 28004
+				size = 18000
 			}
 		}
 	}

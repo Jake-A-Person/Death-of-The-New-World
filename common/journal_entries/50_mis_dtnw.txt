@@ -11,7 +11,10 @@ je_mis_land_reform = {
 
 	complete = {
 		has_law = law_type:law_slavery_banned
-		NOT = {has_law = law_type:law_serfdom}
+		OR = {
+			has_law = law_type:law_homesteading
+			has_law = law_type:law_commercialized_agriculture
+		}
 
 		is_at_war = no
 

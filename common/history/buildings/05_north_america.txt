@@ -608,7 +608,7 @@
 		}
 	}
 	s:STATE_WISCONSIN={
-		region_state:WIS={
+		region_state:LKT={
 		}
 	}
 	s:STATE_INDIANA={

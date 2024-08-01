@@ -20,6 +20,8 @@
 
 dtnw_deal_with_mexico = {
 	is_shown = {
+		overlord = c:WAH
+		exists = c:MEX
 		OR = {
 			AND = {
 				exists = c:MIS
@@ -36,6 +38,7 @@ dtnw_deal_with_mexico = {
 
 	possible = {
 		has_law = law_type:law_slavery_banned
+		NOT = {has_modifier = union_with_mexico}
 	}
 
 	when_taken = {
@@ -52,6 +55,8 @@ dtnw_deal_with_mexico = {
 
 dtnw_stop_deal_with_mexico = {
 	is_shown = {
+		overlord = c:WAH
+		exists = c:MEX
 		OR = {
 			AND = {
 				exists = c:MIS
@@ -64,24 +69,51 @@ dtnw_stop_deal_with_mexico = {
 
 			}		
 		}
-		
 	}
 
+	
 	possible = {
-		has_law = law_type:law_slavery_banned
+		has_modifier = union_with_mexico
 	}
 
-	when_taken = {
-		# remove_modifier = {
-		# 	name = union_with_mexico
-		# }
+		when_taken = {
+		remove_modifier = union_with_mexico 
 	}
 
-	ai_chance = {
+		ai_chance = {
 		base = 0		
 	}
-
 }
+
+# # #i think isuuse
+# dtnw_stop_deal_with_mexico = {
+# 	is_shown = {
+# 		overlord = c:WAH
+# 		exists = c:MEX
+# 		OR = {
+# 			AND = {
+# 				exists = c:MIS
+# 				this = c:MIS
+
+# 			}
+# 			AND = {
+# 				exists = c:LOU
+# 				this = c:LOU
+
+# 			}		
+# 		}
+# 	}
+
+# 	possible = { has_modifier = union_with_mexico }
+
+# 	when_taken = {
+# 		remove_modifier = { name = union_with_mexico }
+# 	}
+
+# 	ai_chance = {
+# 		base = 0		
+# 	}
+# }
 
 dtnw_accecpt_former_states = {
 	is_shown = {
@@ -91,7 +123,7 @@ dtnw_accecpt_former_states = {
 
 	possible = {
 		is_at_war = no
-		is_diplomatic_play_initiator = no
+		is_diplomatic_play_committed_participant = no
 		OR = {
 			c:LOU  = {
 				has_modifier = union_with_mexico
@@ -104,12 +136,6 @@ dtnw_accecpt_former_states = {
 	}
 
 	when_taken = {
-		# c:LOU  = {
-		# 	remove_modifier = union_with_mexico
-		# }
-		# c:MIS  = {
-		# 	remove_modifier = union_with_mexico
-		# }
 		if = {
 			limit = { c:LOU = {	has_modifier = union_with_mexico } }
 		c:LOU = {
@@ -123,21 +149,24 @@ dtnw_accecpt_former_states = {
 		}
 		if = {
 			limit = { c:MIS = {	has_modifier = union_with_mexico } }
-		c:MIS = {
-			make_independent = yes
+			
+			c:MIS = { make_independent = yes }
+		
+			create_diplomatic_pact = {
+				country = c:MIS
+				type = protectorate
+			}
 		}
-		create_diplomatic_pact = {
-			country = c:MIS
-			type = protectorate
-		}
-	}
 
-			c:WAH = {
-			trigger_event = dtnw_sick_us.4
-		}
+			c:WAH = { trigger_event = dtnw_sick_us.4 }
 	}
 
 	ai_chance = {
-		base = 1000
+		base = 0
+		modifier = {
+			#I made it up so it looks random but is about 5 years
+			trigger = {game_date < 1841.5.9}
+			add = 100
+		}
 	}
 }

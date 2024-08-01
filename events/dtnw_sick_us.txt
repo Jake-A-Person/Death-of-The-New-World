@@ -29,8 +29,14 @@ dtnw_sick_us.1{
 		add_journal_entry = {
 			type = je_sick_us
 		}
+		# add_journal_entry = { #cut for now
+		# 	type = je_sick_us_slavery
+		# }
 		add_journal_entry = {
-			type = je_sick_us_slavery
+			type = je_sick_us_spain
+		}
+		add_modifier = {
+			name = shell_of_us
 		}
 	}
 }
@@ -331,11 +337,9 @@ dtnw_sick_us.4{
 	}
 
 	option = {
-
-		c:USA = {
-			add_journal_entry = {
-				type = je_sick_us_mexcio
-			}
+		name = dtnw_sick_us.4.a
+		add_journal_entry = {
+			type = je_sick_us_mexcio
 		}
 	}
 }

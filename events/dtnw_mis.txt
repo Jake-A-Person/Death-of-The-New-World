@@ -30,6 +30,12 @@ dtnw_mis.1{
 			type = je_mis_land_reform
 		}
 
+		add_modifier = {
+			name = mis_enlightened_cue
+			years = 5
+			is_decaying	= yes		
+		}
+
 	}
 }
 
@@ -84,11 +90,26 @@ dtnw_mis.3{
 	immediate = {
 		
 	}
-
+	#reactionary reforms
 	option = {
 		name = dtnw_mis.3.a
 
 		default_option = yes
+
+		add_radicals = {
+			value = large_radicals
+			strata = rich
+		} 
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_slavery_banned
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = dtnw_mis.3.b
 
 		add_radicals = {
 			value = very_large_radicals

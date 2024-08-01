@@ -1,8 +1,8 @@
 ﻿#missouri
 MIS = {
-	color = { 147 130 110 }
+	color = { 91 110 121 }
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality	
 	
@@ -11,9 +11,10 @@ MIS = {
 }
 #missouri loyal
 MIL = {
-	color = { 147 130 110 }
+	color = { 97 114 127 }
 
-	country_type = recognized
+	country_type =	colonial
+
 
 	tier = principality	
 	
@@ -25,7 +26,7 @@ MIL = {
 LOL = {
 	color = { 147 130 110 }
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality	
 	
@@ -34,11 +35,11 @@ LOL = {
 
 }
 
-#greater washington (would have been WAS but New REDACTRD south wales
+#greater washington (would have been WAS but New REDACTRD south wales)
 WAH = {
 	color = { 20  20  240 }
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = kingdom
 	
@@ -51,7 +52,7 @@ WAH = {
 NYR = {
 	color = { 223  230  27 }
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = kingdom
 	
@@ -61,9 +62,9 @@ NYR = {
 
 #alabama
 ALA = {
-	color = {240 30 30}
+	color = {250 100 100}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -73,9 +74,9 @@ ALA = {
 
 #mississippi
 MIP = {
-	color = {0 0 240}
+	color = {65 75 51}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -85,9 +86,9 @@ MIP = {
 
 #arkansas
 ARK = {
-	color = {0 240 0}
+	color = {170 152 142}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -99,7 +100,7 @@ ARK = {
 MWU = {
 	color = {100 240 100}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -109,9 +110,9 @@ MWU = {
 
 #iowa
 IOW = {
-	color = {220 100 100}
+	color = {120  120  200}
 	
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -123,7 +124,7 @@ IOW = {
 WIS = {
 	color = {100 240 100}
 	
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -147,9 +148,9 @@ NEN = {
 
 #tennessee
 TEN = {
-	color = {240 30 30}
+	color = {200 30 30}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -158,9 +159,9 @@ TEN = {
 }
 
 INI = {
-	color = {240 30 30}
+	color = {100 100 230}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -169,9 +170,9 @@ INI = {
 }
 
 ILL = {
-	color = {240 30 30}
+	color = {61 79 54}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -182,7 +183,7 @@ ILL = {
 OHI = {
 	color = {240 30 30}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 
@@ -191,9 +192,9 @@ OHI = {
 }
 
 KEN = {
-	color = {240 30 30}
+	color = {179 128 30}
 
-	country_type = recognized
+	country_type = colonial
 
 	tier = principality
 

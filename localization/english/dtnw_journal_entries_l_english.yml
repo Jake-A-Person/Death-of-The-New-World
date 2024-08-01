@@ -1,2 +1,16 @@
 ﻿l_english:
+#mis
 je_mis_land_reform:0 "Land Refom"
+je_mis_land_reform_reason:0 "In the proclamation of the principality of missouri prince Alexader von Blad promised fredom for all and equalty of distribution of land"
+#sick us (wah)
+je_sick_us:0 "State of The Union"
+je_sick_us_reason:0 "The lose of the second war of indipenace ment allmost full self govence had to be given to the states forming a highly usble union wich could clopas at any moment"
+je_sick_us_mexcio:0 "Mexican War"
+je_sick_us_mexcio_reason:0 "The war with mexico is shaking the union and the old status quo can only be restored if the loyaists retake the secessionist states"
+je_sick_us_spain:0 "Florida Situation"
+je_sick_us_spain_reason:0 "The ocupation of florida was never officially resolved with spain and draws commendation from all of the powers of Europe"
+#loyalists to normal tags
+je_home_land_mil:0 "Reclaime the home land"
+je_home_land_mil_reason:0 "We may have seceded from the traitors in the Mississippi government to be loyal to the union but we failed to overthrow the government in Mississippi"
+je_home_land_lol:0 "Reclaime the home land"
+je_home_land_lol_reason:0 "We may have seceded from the traitors in the Louisiana government to be loyal to the union but we failed to overthrow the government in Louisiana"

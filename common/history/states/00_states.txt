@@ -512,12 +512,11 @@ STATES = {
 	}
 	s:STATE_WISCONSIN = {
 		create_state = {
-			country = c:WIS
+			country = c:LKT
 			owned_provinces = { xD0C040 xAFF4FA xAA87FB xEF4297 x0F38D4 x397AA3 xEB502A x794B5B x887276 x9F4495 xE3903C x3C47F9 x24883A x16E7BF xD04040 x89F507 x941A5A xE6D0B8 x5FE739 xA6AF2F x3E0D88 x5816B1 xD5A704 x520EFD x618762 xE49CB0 x68A47D x049BAB xBFF7BC xCB7277 x80A0C0 xA5C179 xF54CF0 x9C97B2 x49B5A8 x900040 xE2A342 x4A71CA xF6BC89 x092B18 x657999 x779B77 x52A5FD x39FC40 xF57B6E x4B51EB x3E86B7 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 		
-		add_homeland = cu:yankee		
 		add_homeland = cu:dakota
 		add_homeland = cu:algonquian	
 	}
@@ -606,7 +605,7 @@ STATES = {
 			}
 		}
 		
-		add_claim = c:FLR
+		add_claim = c:WAH
 		add_claim = c:SPA
 		add_homeland = cu:dixie
 		add_homeland = cu:afro_american	
@@ -752,7 +751,6 @@ STATES = {
 			}
 		}
 		
-		add_homeland = cu:dixie
 		add_homeland = cu:afro_american
 		add_homeland = cu:mexican
 		add_homeland = cu:comanche

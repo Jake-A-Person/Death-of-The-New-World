@@ -2,20 +2,36 @@
 #MIS events
 dtnw_mis.1.t:0 "The Proclamation of the Principality of Missouri"
 dtnw_mis.1.d:0 "The formerly corupt goverment has been overfrown by the combinde efforts of the people and our new ruler who has promised to give land back to the people and free all salves"
-dtnw_mis.1.f:0 ""I hearby proclame the creation of the Principality of Missouri with me Alexader von Blad as the first prince of the royal house of Blade" - prince Alexader von Blad c.1836"
+dtnw_mis.1.f:0 ""I hearby proclame the creation of the Principality of Missouri with me Alexader von Blad as the first prince of the royal house of Blade" - Prince Alexader von Blad c.1836"
 dtnw_mis.1.a:0 "Viva Missouri"
 #compleated land refroms journal
 dtnw_mis.2.t:0 "The Proclamation of the rights of The People"
+dtnw_mis.1.f:0 ""I hearby proclame the rights of The People of Missouri allowing for equlity of land and fredom of all people" - Alexader von Blad"
 dtnw_mis.2.d:0 "The refroms to land and end of slavery have been successful"
 dtnw_mis.2.a:0 "Onwards"
 #failed land refroms journal
 dtnw_mis.3.t:0 "The people rally against the government once again"
-dtnw_mis.3.d:0 "The lack of refroms to land and continuation of slavery have untied the people once again against the goverment"
-dtnw_mis.3.a:0 "Its all over"
+dtnw_mis.1.f:0 "The streets of st.Louis are overwhelmed by protestors"
+dtnw_mis.3.d:0 "The lack of refromhave untied the people once again against the goverment"
+dtnw_mis.3.a:0 "Use the princes authority to implement the laws"
+dtnw_mis.3.b:0 "It's all over"
+
+#WAH events
+#start up
+dtnw_sick_us.1.t:0 "The state of the union"
+dtnw_sick_us.1.d:0 "While the US theoretically remains as a continuous nation in reality it is a grouping of many near independent states not unlike the German Confederation"
+dtnw_sick_us.1.f:0 "The second war of independence shock the union to its core what was thought to be a quick war to rapidly take British north America instead lasted 4 long years. While the territorial changes were relatively minor only losing new England and about half of the Louisiana territory it shook many people's belief in the union. In order to preserve the union massive power was devolved to each state turning them into practically independent countries. A few sates on the east coast grouped together to form the union of Greater Washington which is all that is left of a central government."
+dtnw_sick_us.1.a:0 "Onwards"
+
+#mexico war
+dtnw_sick_us.4.a:0 "Succession"
+dtnw_sick_us.4.d:0  "Some of the eastern states have succeeded from the union to mexico"
+dtnw_sick_us.4.f:0  "The government of some of the eastern states in the union have declared their intention to join with Mexico as protectorates citing slavery and security. Mexico has accepted sovereignty of said states. There are a small number of people who have succeeded from the now Mexican protectorates forming a loyalists union state."
+dtnw_sick_us.4.a:0 "This means war"
 
 #NEN events
 dtnw_nen.1.t:0 "Memorandum on the yankee canadian question - New England"
-dtnw_nen.1.d:0 "The question over if we are canadian or somthing else..."
+dtnw_nen.1.d:0 "Are we canadian or somthing else..."
 dtnw_nen.1.f:0 "A combination of public protest and Anglo-Canadian arms ripped New England away from the US and into Englands sphere as a self-governing colony. But now the question arise over wheather we should become part of a future Canadian confederation or if we are something else and seek a different path in the years to come"
 dtnw_nen.1.a:0 "We are Canadian"
 dtnw_nen.1.b:0 "We are Yankke"

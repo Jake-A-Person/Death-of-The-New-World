@@ -1,0 +1,53 @@
+﻿# change back to LOU
+je_home_land_lol = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+
+   immediate = {
+   }
+   
+	possible = {
+	}
+
+	complete = {
+		NOT = {
+			exists = c:LOU
+		}
+	}
+
+	
+	on_complete = {
+		change_tag = LOU
+	}
+	
+
+	weight = 10000
+}
+
+# change back to MIS
+je_home_land_mil = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+   group = je_group_internal_affairs
+
+   immediate = {
+   }
+   
+	possible = {
+	}
+
+	complete = {
+		NOT = {
+			exists = c:MIS
+		}
+	}
+
+	
+	on_complete = {
+		change_tag = MIS
+	}
+	
+
+	weight = 10000
+}

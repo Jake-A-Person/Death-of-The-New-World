@@ -2,3 +2,11 @@
 #MIS
 dtnw_mis_union_with_natives_decision:0 "Form the Missouri Native Commonwealth"
 dtnw_mis_union_with_natives_decision_desc:0 "With the reforms of the citanzship its time to officaly reconzie the native americans in the nation"
+#mex
+dtnw_accecpt_former_states:0 "Declare the esatern states protectorates"
+dtnw_accecpt_former_states_desc:0 "Some of the westen us staets are disconted about the union and wish to be mexican protectorates"
+#lou/misa -> mexican protectorate
+dtnw_deal_with_mexico:0 "Ask to become a mexican protectorate when mexico is ready"
+dtnw_deal_with_mexico_desc:0 "The USA is cleary a dinng nation and the only way to maint self governance is to join with mexico"
+dtnw_stop_deal_with_mexico:0 "Revoke our agrement to be a mexican protectorate"
+dtnw_stop_deal_with_mexico_desc:0 "Perhaps we should forge our own path with-out mexico"

@@ -1,4 +1,15 @@
 ﻿union_with_mexico={
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 }
-
+shell_of_us={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -600
+	country_prestige_add = 100
+	
+}
+#TODO
+mis_enlightened_cue={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_industrialists_pol_str_mult = 0.4
+	interest_group_ig_landowners_pol_str_mult = -1
+}

@@ -1,11 +1,13 @@
 ﻿COUNTRIES = {
-	c:MWU ?= {
+	c:INI ?= {
 		
 	effect_starting_technology_tier_2_tech = yes
 	
-	set_market_capital = STATE_ILLINOIS
+	#something something only there
+	set_market_capital = STATE_INDIANA
 					
 	#same as the other south states
+	
 	effect_starting_politics_liberal = yes
 	activate_law = law_type:law_landed_voting
 	activate_law = law_type:law_tenant_farmers
@@ -21,11 +23,11 @@
 	  set_institution_investment_level = {
 		institution = institution_schools
 		level = 2
-	}
+		}
 
 
 	ig:ig_landowners = {
 		add_ruling_interest_group = yes
 	}
-}
+	}
 }

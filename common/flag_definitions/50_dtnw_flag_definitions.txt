@@ -15,6 +15,22 @@ MIS = {
 	}
 }
 
+MIL = {
+	flag_definition = {
+		coa = MIS
+		subject_canton = MIS
+		priority = 1
+	}
+}
+
+LOL = {
+	flag_definition = {
+		coa = LOU
+		subject_canton = LOU
+		priority = 1
+	}
+}
+
 NYR = {	
 	flag_definition = {
 	coa = NYR
@@ -46,10 +62,40 @@ ALA = {
 		priority = 1
 		}
 }
+
 IOW = {
 	flag_definition = {
 		coa = IOW
 		subject_canton = IOW
 		priority = 1
 		}
+}
+
+TEN = {	
+	flag_definition = {
+	coa = TEN
+	subject_canton = TEN
+	priority = 1
+	}
+}
+OHI = {	
+	flag_definition = {
+	coa = OHI
+	subject_canton = OHI
+	priority = 1
+	}
+}
+ILL = {	
+	flag_definition = {
+	coa = ILL
+	subject_canton = ILL
+	priority = 1
+	}
+}
+IND = {	
+	flag_definition = {
+	coa = IND
+	subject_canton = IND
+	priority = 1
+	}
 }
