@@ -6,6 +6,7 @@ je_mis_land_reform = {
 
 
 	possible = {
+		exists = c:MIS
 		this = c:MIS
 	}
 

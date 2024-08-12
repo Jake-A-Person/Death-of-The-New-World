@@ -15,17 +15,14 @@ je_sick_us = {
 	}
 
 	complete = {
-		AND = {
-			scope:journal_entry = {
-				is_goal_complete =  yes
-			}
-			has_variable = sick_us_slave_solved
-		}
-
+		has_technology_researched = pan-nationalism	
 	}
 
 	fail = {
-		var:sick_us_var >= 2
+		custom_tooltip = {
+			text = je_us_failure_tt
+			var:sick_us_var >= 2
+		}
 	}
 
 	on_fail = {
@@ -37,7 +34,6 @@ je_sick_us = {
 	}
 	
 	on_complete = {
-		#yay
 	}
 	
 	current_value = {
@@ -85,15 +81,13 @@ icon = "gfx/interface/icons/event_icons/event_election.dds"
 		is_at_war = no
 		is_diplomatic_play_committed_participant = no
 		
-		OR = {
+		AND = {
 			exists = c:LOU
 			c:LOU = { overlord = c:MEX }
-			NOT = {c:LOU = { has_modifier = union_with_mexico }}
 		}
-		OR = {
+		AND = {
 			exists = c:MIS
 			c:MIS = { overlord = c:MEX }
-			NOT = {c:MIS = { has_modifier = union_with_mexico }}
 		}
 		}
 	}
@@ -130,6 +124,7 @@ icon = "gfx/interface/icons/event_icons/event_election.dds"
 
 	}
 
+
 	weight = 10000
 }
 
@@ -144,10 +139,23 @@ je_sick_us_spain = {
 	immediate = {
 	}
 	complete = {
-		NOT = {c:SPA = { has_claim = s:STATE_FLORIDA }}
+		OR = {
+			custom_tooltip = {
+				text = je_sick_us_spain_comp
+				NOT = {c:SPA = { has_claim = s:STATE_FLORIDA }}
+			}
+			owns_entire_state_region = STATE_FLORIDA
+		}
+
 	}
 	fail = {
-		NOT = {has_claim = s:STATE_FLORIDA}
+		OR = {
+			custom_tooltip = {
+				text = je_sick_us_spain_fail
+				NOT = {has_claim = s:STATE_FLORIDA}
+			}
+			c:SPA = {owns_entire_state_region = STATE_FLORIDA}
+		}
 	}
 	on_fail = {
 		change_variable = {
@@ -157,87 +165,3 @@ je_sick_us_spain = {
 	}
 }
 
-# state of slavry
-je_sick_us_slavery = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
-   group = je_group_internal_affairs
-   
-	possible = {
-	}
-
-	complete = {
-	}
-
-	on_complete = {
-		set_variable = { name =  sick_us_slave_solved }
-	}
-	
-	on_timeout = {
-		#fail
-		trigger_event = {
-			id = dtnw_mis.3
-		}
-	}
-	
-	scripted_button = je_sick_us_button_trade_slaves
-	scripted_button = je_sick_us_button_free_slaves
-
-
-	weight = 10000
-}
-
-je_civl_war = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
-	group = je_group_internal_affairs
-
-	immediate = {
-	}
-	
-	 possible = {
-	 }
- 
-	 complete = {
-	 }
- 
-	 on_complete = {
-	 }
-	 
-	 on_timeout = {
-
-	 }
- 
- 
-	 weight = 10000
-}
-#for the 1st suject to chose civl war
-je_civl_war_start = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
-	group = je_group_internal_affairs
-	
-	immediate = {
-	set_variable = sick_us_civl_war
-	}
-
-	 possible = {
-	 }
- 
-	 complete = {
-	 }
- 
-	 on_complete = {
-	 }
-	 
-	 on_timeout = {
-		create_diplomatic_play = {
-			type = dp_independence
-			target_country = overlord
-		}
-	 }
- 
-	 timeout = 32
- 
-	 weight = 10000
-}

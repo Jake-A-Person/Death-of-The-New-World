@@ -564,6 +564,8 @@ PNS = {
 
 	required_states_fraction = 0.7 # Basically as long as you've colonized
 
+	ai_will_do = { always = yes }#MODED NOT in base game for some reason
+
 	possible = {
 		has_technology_researched = pan-nationalism
 	}

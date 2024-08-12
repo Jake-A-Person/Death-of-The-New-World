@@ -491,13 +491,13 @@
 		}
 	}
 	s:STATE_OKLAHOMA={
-		region_state:SEQ={
+		region_state:PWN={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
 					building={
 						type="building_cotton_plantation"
-						country="c:SEQ"
+						country="c:PWN"
 						levels=1
 						region="STATE_OKLAHOMA"
 					}
@@ -1215,6 +1215,12 @@
 				activate_production_methods={ "pm_basic_port" }
 		}
 		region_state:WAH={
+
+		}
+
+		region_state:SML={
+
+		}
 		}
 	}
 	s:STATE_GEORGIA={

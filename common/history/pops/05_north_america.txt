@@ -330,7 +330,27 @@
 		}
 	}
 	s:STATE_OKLAHOMA = {
-		region_state:SEQ = {
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 1800
+			}
+			create_pop = {
+				pop_type = slaves # there was even a slave revolt at Webbers Falls in 1842
+				culture = afro_american
+				size = 1200
+			}
+			create_pop = {
+				culture = caddoan
+				size = 8000
+			}
+			create_pop = {
+				culture = cherokee
+				size = 50800
+			}
+		}
+
+		region_state:PWN = {
 			create_pop = {
 				culture = siouan
 				size = 2000
@@ -347,12 +367,6 @@
 			create_pop = {
 				culture = cherokee
 				size = 50800
-			}
-		}
-		region_state:COM = {
-			create_pop = {
-				culture = siouan
-				size = 18000
 			}
 		}
 	}
@@ -628,6 +642,7 @@
 				culture = spanish
 				size = 1000
 			}
+		}
 		region_state:WAH = {
 			create_pop = {
 				culture = muskogean

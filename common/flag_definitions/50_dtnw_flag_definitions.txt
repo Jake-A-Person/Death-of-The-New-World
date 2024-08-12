@@ -15,6 +15,14 @@ MIS = {
 	}
 }
 
+MNA = {
+	flag_definition = {
+		coa = MIS
+		subject_canton = MIS
+		priority = 1
+	}
+}
+
 MIL = {
 	flag_definition = {
 		coa = MIS

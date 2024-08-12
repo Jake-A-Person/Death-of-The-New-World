@@ -15,15 +15,15 @@
     		type = protectorate
     	}
 		create_diplomatic_pact = {
-    		country = c:FLR
-    		type = protectorate
-    	}
-		create_diplomatic_pact = {
     		country = c:GRG
     		type = protectorate
     	}		
 		create_diplomatic_pact = {
     		country = c:IOW
+    		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:INI
     		type = protectorate
     	}
 		create_diplomatic_pact = {
@@ -42,14 +42,7 @@
     		country = c:UOM
     		type = protectorate
     	}
-		create_diplomatic_pact = {
-    		country = c:WIS
-    		type = protectorate
-    	}
-		create_diplomatic_pact = {
-    		country = c:MWU
-    		type = protectorate
-    	}
+
 		create_diplomatic_pact = {
     		country = c:MIS
     		type = protectorate
@@ -68,10 +61,6 @@
     	}
 		create_diplomatic_pact = {
     		country = c:OHI
-    		type = protectorate
-    	}
-		create_diplomatic_pact = {
-    		country = c:IND
     		type = protectorate
     	}
 		create_diplomatic_pact = {

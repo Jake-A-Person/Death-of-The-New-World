@@ -71,12 +71,13 @@
 			type = army
 			hq_region = sr:region_the_midwest
 			name = Regular_Army
-		}
-		combat_unit = {
+
+			combat_unit = {
 			type = unit_type:combat_unit_type_line_infantry
 			state_region = s:STATE_OHIO
 			count = 1
 		}
+	}
 	}
 
 	c:KEN ?= {
@@ -84,12 +85,13 @@
 			type = army
 			hq_region = sr:region_the_midwest
 			name = Regular_Army
-		}
+
 		combat_unit = {
 			type = unit_type:combat_unit_type_line_infantry
 			state_region = s:STATE_KENTUCKY
 			count = 1
 		}
+	}
 	}
 
 	c:ALA ?= {
@@ -97,12 +99,13 @@
 			type = army
 			hq_region = sr:region_dixie
 			name = Regular_Army
-		}
+
 		combat_unit = {
 			type = unit_type:combat_unit_type_line_infantry
 			state_region = s:STATE_ALABAMA
 			count = 1
 		}
+	}
 	}
 
 	c:GEO ?= {
@@ -110,12 +113,12 @@
 			type = army
 			hq_region = sr:region_dixie
 			name = Regular_Army
-		}
 		combat_unit = {
 			type = unit_type:combat_unit_type_line_infantry
 			state_region = s:STATE_GEORGIA
 			count = 1
 		}
+	}
 	}
 
 	c:TEX ?= {
@@ -200,7 +203,7 @@
 			transfer_to_formation = scope:operaciones_army
 		}
 
-		create_military_formation = {
+		create_military_formation = { #biger than normal for game play
 			type = army
 			hq_region = sr:region_mexico
 			name = Ejrcito_Mexicano
@@ -208,19 +211,19 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_OAXACA
-				count = 1
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ZACATECAS
-				count = 1
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_OAXACA
-				count = 1
+				count = 3
 			}
 		}
 

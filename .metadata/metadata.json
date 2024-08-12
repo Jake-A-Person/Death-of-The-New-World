@@ -1,10 +1,9 @@
 {
   "name" : "Death of The New World",
-	"id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
-  "tags" : [],
+  "id" : "death.of.the.new.world",
+  "short_description" : "What if the USA lost the war of 1812",
+  "tags" : ["Alternative History"],
+  "picture": "thumbnail.png",
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true

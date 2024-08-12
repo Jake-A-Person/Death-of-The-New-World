@@ -1,0 +1,4 @@
+The file gfx\coat_of_arms\textured_emblems\te_seal_mis.dds is a modification of the flag of Missouri as found bellow and was created by: User:Denelson83 as a derivative work of Flag of Missouri.svg by Paedia and my modification of the flag is released under the CC BY-SA 3.0This image contains official insignia which may be subject to legal restrictions. CC BY-SA 3.0 license found here: https://creativecommons.org/licenses/by-sa/3.0/ 
+https://en.wikipedia.org/wiki/Flag_of_Missouri#/media/File:Flag_of_the_Missouri_State_Guard.svg
+The file gfx\coat_of_arms\colored_emblems\ce_iowa_cot.dds is a modification of the flag of Iowa as found bellow and is in the public domain:
+https://en.wikipedia.org/wiki/Flag_of_Iowa#/media/File:Flag_of_Iowa.svg

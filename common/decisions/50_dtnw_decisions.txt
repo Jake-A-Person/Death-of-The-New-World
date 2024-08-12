@@ -85,35 +85,6 @@ dtnw_stop_deal_with_mexico = {
 	}
 }
 
-# # #i think isuuse
-# dtnw_stop_deal_with_mexico = {
-# 	is_shown = {
-# 		overlord = c:WAH
-# 		exists = c:MEX
-# 		OR = {
-# 			AND = {
-# 				exists = c:MIS
-# 				this = c:MIS
-
-# 			}
-# 			AND = {
-# 				exists = c:LOU
-# 				this = c:LOU
-
-# 			}		
-# 		}
-# 	}
-
-# 	possible = { has_modifier = union_with_mexico }
-
-# 	when_taken = {
-# 		remove_modifier = { name = union_with_mexico }
-# 	}
-
-# 	ai_chance = {
-# 		base = 0		
-# 	}
-# }
 
 dtnw_accecpt_former_states = {
 	is_shown = {
@@ -124,6 +95,7 @@ dtnw_accecpt_former_states = {
 	possible = {
 		is_at_war = no
 		is_diplomatic_play_committed_participant = no
+		NOT = { has_truce_with = c:WAH }
 		OR = {
 			c:LOU  = {
 				has_modifier = union_with_mexico
@@ -165,7 +137,7 @@ dtnw_accecpt_former_states = {
 		base = 0
 		modifier = {
 			#I made it up so it looks random but is about 5 years
-			trigger = {game_date < 1841.5.9}
+			trigger = {game_date > 1841.5.9}
 			add = 100
 		}
 	}

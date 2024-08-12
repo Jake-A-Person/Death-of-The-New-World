@@ -37,128 +37,7 @@ dtnw_sick_us.1{
 		}
 	}
 }
-#free slaves master event
-dtnw_sick_us.2{
-	type = country_event
-	placement = root
-	title = dtnw_sick_us.2.t
-	desc = dtnw_sick_us.2.d
-	flavor = dtnw_sick_us.2.f
 
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	duration = 1
-
-	trigger = {
-
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = dtnw_sick_us.2.a
-		default_option = yes
-		every_subject_or_below = {
-		   trigger_event = dtnw_sick_us.21
-	   }
-	}
-}
-#free slaves subject event
-dtnw_sick_us.21{
-
-	type = country_event
-	placement = root
-	title = dtnw_sick_us.21.t
-	desc = dtnw_sick_us.21.d
-	flavor = dtnw_sick_us.21.f
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	duration = 1
-
-	trigger = {
-
-	}
-
-	immediate = {
-	}
-
-	#has slaves banned
-	option = {	
-		trigger = {
-			has_law = law_type:law_slavery_banned
-		}
-		name = dtnw_sick_us.21.a
-		default_option = yes
-	}
-
-
-	#civl war
-	option = {	
-		trigger = {
-			not = {
-				has_law = law_type:law_slavery_banned
-			}
-		}
-		name = dtnw_sick_us.21.b
-		default_option = yes
-		#not an error just new in 1.7
-		add_liberty_desire = 100
-		change_relations = {
-			country = overlord
-			value = -100
-		}
-		if = {
-			limit = {
-					NOT = {has_variable = sick_us_civl_war}
-				}
-		add_journal_entry = {type = je_civl_war_start}
-		}
-	}
-
-	#ban slaves
-	option = {	
-		trigger = {
-			not = {
-				has_law = law_type:law_slavery_banned
-			}
-		}
-		name = dtnw_sick_us.21.c
-	}
-}
-
-
-#slave trade/debt
-dtnw_sick_us.3{
-	type = country_event
-	placement = root
-	title = dtnw_sick_us.3.t
-	desc = dtnw_sick_us.3.d
-	flavor = dtnw_sick_us.3.f
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	duration = 1
-
-	trigger = {
-
-	}
-
-	immediate = {
-
-	}
-
-	option = {
-		name = dtnw_sick_us.3.a
-	}
-}
 #mexican war
 dtnw_sick_us.4{
 	placement = root
@@ -182,8 +61,10 @@ dtnw_sick_us.4{
 			create_country = {
 			tag = LOL
 			origin = c:LOU
-
 			province = p:x13B0C7
+			}
+			c:LOL = {
+				activate_law = law_type:law_slave_trade
 			}
 			create_diplomatic_pact = {
 			country = c:LOL
@@ -192,15 +73,20 @@ dtnw_sick_us.4{
 		}
 
 		if = {
-			limit = { c:LOU = {	has_modifier = union_with_mexico } }
+			limit = { c:MIS = {	has_modifier = union_with_mexico } }
 			create_country = {
 			tag = MIL
 			origin = c:MIS
-
 			province = p:x50C080
 			}
+			c:MIS = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_tenant_farmers
+				activate_law = law_type:law_landed_voting
+				activate_law = law_type:law_slave_trade
+			}
 			create_diplomatic_pact = {
-			country = c:mil
+			country = c:MIL
 			type = protectorate
 			}
 		}
@@ -217,8 +103,6 @@ dtnw_sick_us.4{
 
 			target_country = c:MEX
 
-			escalation = 40
-
 			war = no
 
 			add_target_backers = {
@@ -232,25 +116,24 @@ dtnw_sick_us.4{
 				c:MIL
 				c:LOL
 			}
-			
 			add_war_goal = {
 				holder = c:MIS
-				type = conquer_state
-				target_country = C:MIL
+				type = annex_country
+				target_country = c:MIL
 			}
 			add_war_goal = {
 				holder = C:MIL
-				type = conquer_state
+				type = annex_country
 				target_country = c:MIS
 			}
 			add_war_goal = {
 				holder = c:LOU
-				type = conquer_state
+				type = annex_country
 				target_country = c:LOL
 			}
 			add_war_goal = {
 				holder = c:LOL
-				type = conquer_state
+				type = annex_country
 				target_country = c:LOU
 			}
 		}
@@ -282,12 +165,12 @@ dtnw_sick_us.4{
 				
 				add_war_goal = {
 					holder = c:MIS
-					type = conquer_state
+					type = annex_country
 					target_country = C:MIL
 				}
 				add_war_goal = {
 					holder = C:MIL
-					type = conquer_state
+					type = annex_country
 					target_country = c:MIS
 				}
 			}
@@ -319,12 +202,12 @@ dtnw_sick_us.4{
 					
 					add_war_goal = {
 						holder = c:LOU
-						type = conquer_state
+						type = annex_country
 						target_country = C:LOL
 					}
 					add_war_goal = {
 						holder = C:LOL
-						type = conquer_state
+						type = annex_country
 						target_country = c:LOU
 					}
 				}
