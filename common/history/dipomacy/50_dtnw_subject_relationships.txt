@@ -10,9 +10,14 @@
     	}
     }
 	c:WAH ?= {
+		#oh usa
 		create_diplomatic_pact = {
     		country = c:ALA
     		type = protectorate
+    	}
+		create_diplomatic_pact = {
+    		country = c:ALA
+    		type = grant_own_market
     	}
 		create_diplomatic_pact = {
     		country = c:ARK
@@ -46,7 +51,6 @@
     		country = c:UOM
     		type = protectorate
     	}
-
 		create_diplomatic_pact = {
     		country = c:MIS
     		type = protectorate
@@ -70,6 +74,64 @@
 		create_diplomatic_pact = {
     		country = c:ILL
     		type = protectorate
+    	}
+		
+		#oh markets
+ 		create_diplomatic_pact = {
+    		country = c:ARK
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:GRG
+    		type = grant_own_market
+    	}		
+		create_diplomatic_pact = {
+    		country = c:IOW
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:INI
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:LOU
+    		type = grant_own_market
+    	}		
+		create_diplomatic_pact = {
+    		country = c:MIP
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:NYR
+    		type = grant_own_market
+    	}		
+		create_diplomatic_pact = {
+    		country = c:UOM
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:MIS
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:NYR
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:TEN
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:KEN
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:OHI
+    		type = grant_own_market
+    	}
+		create_diplomatic_pact = {
+    		country = c:ILL
+    		type = grant_own_market
     	}
 	} 
 }

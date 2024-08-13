@@ -8,8 +8,8 @@
 			map_color = { 20  20  240 }
 
 			founding_date = 1776.07.04
-			identity = identity_trade_league
-			principle = principle_internal_trade_1
+			identity = identity_military_treaty_organization
+			principle = principle_aggressive_coordination_1
 		}
 	}
 }
