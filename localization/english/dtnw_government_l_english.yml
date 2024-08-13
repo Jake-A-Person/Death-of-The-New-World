@@ -1,0 +1,5 @@
+﻿l_english:
+ gov_indian_buff_life_term: "Organised Tribes"
+ gov_indian_buff_life_term_desc: "This is a [concept_government_type] where a [Concept('concept_ruler','$RULER_TITLE_SUPREME_CHIEF$')] holds a prominent role in decisionmaking within a union of multiple tribes."
+ gov_indian_buff_elected_term: "Organised Tribes"
+ gov_indian_buff_elected_term_desc: "This is a [concept_government_type] where a [Concept('concept_ruler','$RULER_TITLE_SUPREME_CHIEF$')] holds a prominent role in decisionmaking within a union of multiple tribes."

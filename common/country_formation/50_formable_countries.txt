@@ -33,7 +33,19 @@ CLU = {
 	required_states_fraction = 0.5
 	
 		possible = {
-			has_technology_researched = pan-nationalism
+			has_technology_researched = nationalism
+		}
+
+		ai_will_do = { always = yes }	
+}
+
+CAD = {
+	use_culture_states = yes
+	
+	required_states_fraction = 0.5
+	
+		possible = {
+			has_technology_researched = nationalism
 		}
 
 		ai_will_do = { always = yes }	
