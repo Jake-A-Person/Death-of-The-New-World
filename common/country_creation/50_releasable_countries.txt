@@ -5,3 +5,21 @@
 
 	ai_will_do = { always = no }
 }
+
+#greater(ish) new york
+NYR = {
+	states = {STATE_NEW_YORK}
+
+	required_num_states = 1 
+
+	ai_will_do = { always = no }
+} 
+
+#iowa
+IOW = {
+	states = {STATE_IOWA}
+	
+	required_num_states = 1 
+
+	ai_will_do = { always = no }
+}

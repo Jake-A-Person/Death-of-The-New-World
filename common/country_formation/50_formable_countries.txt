@@ -26,3 +26,15 @@
 
 		ai_will_do = { always = yes }	
 }
+
+CLU = {
+	use_culture_states = yes
+	
+	required_states_fraction = 0.5
+	
+		possible = {
+			has_technology_researched = pan-nationalism
+		}
+
+		ai_will_do = { always = yes }	
+}
