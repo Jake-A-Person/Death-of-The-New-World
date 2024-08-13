@@ -1,0 +1,32 @@
+﻿COUNTRIES = {
+	c:INB ?= {
+		
+		effect_starting_technology_tier_2_tech = yes
+	
+		set_market_capital = STATE_WISCONSIN
+					
+		#idk
+		effect_starting_politics_liberal = yes
+		#chief
+		activate_law = law_type:law_monarchy
+		#counsel of chiefs probably
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_racial_segregation        
+		activate_law = law_type:law_protectionism
+		#dont think they would be industrial
+		activate_law = law_type:law_agrarianism
+		#based of uk?
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_no_workers_rights	
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_no_schools
+		#uk anti slavery
+		activate_law = law_type:law_slavery_banned
+	
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+}

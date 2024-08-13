@@ -4,6 +4,10 @@
     		country = c:NEN
     		type = dominion
     	}
+		create_diplomatic_pact = {
+    		country = c:INB
+    		type = protectorate
+    	}
     }
 	c:WAH ?= {
 		create_diplomatic_pact = {

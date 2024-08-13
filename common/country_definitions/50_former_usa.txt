@@ -262,7 +262,6 @@ INB = {
 	
 		tier = principality	
 		
-		#idk add some
-		cultures = {  cherokee }
+		cultures = { algonquian dakota }
 		capital = STATE_MICHIGAN
 }
