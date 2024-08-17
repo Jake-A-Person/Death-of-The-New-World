@@ -234,7 +234,7 @@ CLU = {
 
 	country_type = recognized
 
-	tier = principality	
+	tier = kingdom	
 	
 	cultures = {  yankee }
 	capital = STATE_MASSACHUSETTS
@@ -247,7 +247,7 @@ CAD = {
 
 	country_type = recognized
 
-	tier = principality	
+	tier = kingdom	
 	
 	cultures = {  dixie }
 	capital = STATE_FLORIDA
@@ -260,7 +260,7 @@ INB = {
 
 		country_type = recognized
 	
-		tier = principality	
+		tier = grand_principality	
 		
 		cultures = { algonquian dakota }
 		capital = STATE_MICHIGAN
