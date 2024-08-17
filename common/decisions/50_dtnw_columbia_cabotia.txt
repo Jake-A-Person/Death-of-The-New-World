@@ -219,3 +219,188 @@ cad_unite_gbr = {
 		}		
 	}
 }
+
+#unite columbia cadbotia canida
+can_clu_cad_unite = {
+	is_shown = {
+		and = {
+			exists = c:CLU
+			c:CLU = {
+				is_subject_of = root
+			}
+			exists = c:CAD
+			c:CAD = {
+				is_subject_of = root
+			}
+			exists = c:CAN
+			c:CLU = {
+				is_subject_of = root
+			}	
+		}
+	}
+	possible = {
+		
+	}
+	when_taken = {
+		if = {
+			limit = {c:CLU = {is_player = yes}}
+			c:CLU = {
+				annex = c:CAD
+				annex = c:CAN
+				change_tag = CCC
+			}
+		}
+		else_if = {
+			limit = {c:CAN = {is_player=yes}}
+			c:CAN = {
+				annex = c:CLU
+				annex = c:CAD
+				change_tag = CCC
+			}
+		}
+		else = {
+			c:CAD = {
+				annex = c:CLU
+				annex = c:CAN
+				change_tag = CCC
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+
+}
+
+clu_cad_unite = {
+	is_shown = {
+		and = {
+			exists = c:CLU
+			c:CLU = {
+				is_subject_of = root
+			}
+			exists = c:CAD
+			c:CAD = {
+				is_subject_of = root
+			}
+			not = {
+				and = {
+					exists = c:CAN
+					c:CLU = {
+						is_subject_of = root
+					}	
+				}
+			}
+		}
+	}
+	possible = {
+		
+	}
+	when_taken = {
+		if = {
+			limit = {c:CLU = {is_player = yes}}
+			c:CLU = {
+				annex = c:CAD
+				change_tag = CCC
+			}
+		}
+		else = {
+			c:CAD = {
+				annex = c:CLU
+				change_tag = CCC
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+
+}
+
+clu_can_unite = {
+	is_shown = {
+		and = {
+			exists = c:CLU
+			c:CLU = {
+				is_subject_of = root
+			}
+			not = {
+				and = {
+					exists = c:CAD
+					c:CAD = {
+						is_subject_of = root
+					}
+				}
+			}	
+			exists = c:CAN
+				c:CLU = {
+					is_subject_of = root
+				}	
+		}
+	}
+	possible = {
+		
+	}
+	when_taken = {
+		if = {
+			limit = {c:CLU = {is_player = yes}}
+			c:CLU = {
+				annex = c:CAN
+				change_tag = CCC
+			}
+		}
+		else = {
+			c:CAN = {
+				annex = c:CLU
+				change_tag = CCC
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}
+#cursed
+cad_can_unite = {
+	is_shown = {
+		and = {
+			not = {
+				and = {
+					exists = c:CLU
+					c:CLU = {
+						is_subject_of = root
+				}
+			}
+			}
+			exists = c:CAD
+			c:CAD = {
+				is_subject_of = root
+			}
+			exists = c:CAN
+				c:CLU = {
+					is_subject_of = root
+				}	
+		}
+	}
+	possible = {
+		
+	}
+	when_taken = {
+		if = {
+			limit = {c:CAD = {is_player = yes}}
+			c:CAD = {
+				annex = c:CAN
+				change_tag = CCC
+			}
+		}
+		else = {
+			c:CAN = {
+				annex = c:CAD
+				change_tag = CCC
+			}
+		}
+	}
+	ai_chance = {
+		base = 100
+	}
+}

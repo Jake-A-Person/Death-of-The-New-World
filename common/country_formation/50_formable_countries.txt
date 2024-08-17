@@ -17,6 +17,8 @@
 		STATE_ONTARIO
 		STATE_QUEBEC
 		STATE_NEWFOUNDLAND
+		STATE_NEW_YORK
+		STATE_PENNSYLVANIA
 	}
 		required_states_fraction = 0.75
 	
@@ -46,6 +48,18 @@ CAD = {
 	
 		possible = {
 			has_technology_researched = nationalism
+		}
+
+		ai_will_do = { always = yes }	
+}
+
+CCC = {
+	use_culture_states = yes
+	
+	required_states_fraction = 0.8
+	
+		possible = {
+			has_technology_researched = pan-nationalism
 		}
 
 		ai_will_do = { always = yes }	

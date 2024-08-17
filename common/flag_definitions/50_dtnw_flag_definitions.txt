@@ -13,12 +13,21 @@ MIS = {
 		subject_canton = MIS
 		priority = 1
 	}
+	flag_definition = {
+		coa = MIS_monarchy
+		subject_canton = MIS
+		priority = 100
+				trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
 }
+
 
 MNA = {
 	flag_definition = {
-		coa = MIS
-		subject_canton = MIS
+		coa = MNA
+		subject_canton = MNA
 		priority = 1
 	}
 }
@@ -105,5 +114,105 @@ IND = {
 	coa = IND
 	subject_canton = IND
 	priority = 1
+	}
+}
+NFR = {	
+	flag_definition = {
+	coa = NFR
+	subject_canton = NFR
+	priority = 1
+	}
+}
+
+INB = {
+	flag_definition = {
+		coa = INB
+		subject_canton = INB
+		priority = 1
+		}
+}
+
+CAD = {
+	flag_definition = {
+		coa = CAD
+		subject_canton = CAD
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.4 0.35 }				
+		priority = 1
+		}
+}
+
+CLU = {
+	flag_definition = {
+		coa = CLU
+		subject_canton = CLU
+
+		priority = 1
+	}
+	flag_definition = {
+		coa = CLU_subject
+		subject_canton = CLU
+		allow_overlord_canton = yes	
+		overlord_canton_scale = { 0.461 0.461 }					
+		trigger = { 
+			coa_def_colonial_ensign_trigger = yes
+		}
+		priority = 25
+		}
+}
+
+
+CCC = {
+	flag_definition = {
+		coa = CCC_full_subject
+		subject_canton = CCC_full_subject
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = CCC_full_subject
+		subject_canton = CCC_full_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.4 0.35 }				
+		trigger = { 
+			coa_def_colonial_ensign_trigger = yes
+		}
+		priority = 1
+	}
+
+	flag_definition = {
+		coa = CCC_cad_can_subject
+		subject_canton = CCC_cad_can_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.4 0.35 }				
+		trigger = { 
+			coa_def_colonial_ensign_trigger = yes
+			coa_def_dtnw_cad_can_trigger = yes
+		}
+		priority = 100
+	}
+
+	flag_definition = {
+		coa = CCC_cad_clu_subject
+		subject_canton = CCC_cad_clu_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.4 0.35 }				
+		trigger = { 
+			coa_def_dtnw_cad_clu_trigger = yes
+			coa_def_colonial_ensign_trigger = yes
+		}
+		priority = 100
+	}
+
+	flag_definition = {
+		coa = CCC_can_clu_subject
+		subject_canton = CCC_can_clu_subject
+		allow_overlord_canton = yes		
+		overlord_canton_scale = { 0.461 0.461 }					
+		trigger = { 
+			coa_def_dtnw_can_clu_trigger = yes
+			coa_def_colonial_ensign_trigger = yes
+		}
+		priority = 100
 	}
 }

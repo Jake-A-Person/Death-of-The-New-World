@@ -1,0 +1,50 @@
+﻿coa_def_dtnw_can_clu_trigger = {
+	exists = scope:actor
+	scope:actor ?= { 
+		or = {
+			exists = c:CAD
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:dixie
+				}
+				count < 4
+			}
+		}
+	}
+
+}
+
+
+coa_def_dtnw_cad_clu_trigger = {
+	exists = scope:actor
+	scope:actor ?= { 
+		or = {
+			exists = c:CAN
+			any_scope_state = {
+				state_region = {
+					or = {
+					is_homeland = cu:anglo_canadian
+					is_homeland = cu:franco_canadian
+					}
+				}
+				count < 4
+			}
+		}
+	}
+}
+
+coa_def_dtnw_cad_can_trigger = {
+	exists = scope:actor
+	scope:actor ?= { 
+		or = {
+			exists = c:CLU
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:yankee
+				}
+				count < 4
+			}
+		}
+	}
+}
+

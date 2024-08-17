@@ -41,9 +41,9 @@ WAH = {
 
 	country_type = colonial
 
-	tier = kingdom
+	tier = grand_principality
 	
-	cultures = { yankee dixie }
+	cultures = { dixie }
 	capital = STATE_DISTRICT_OF_COLUMBIA
 
 }
@@ -54,7 +54,7 @@ NYR = {
 
 	country_type = colonial
 
-	tier = kingdom
+	tier = grand_principality
 	
 	cultures = { yankee }
 	capital = STATE_NEW_YORK
@@ -165,7 +165,7 @@ INI = {
 
 	tier = principality
 
-	cultures = { dixie }
+	cultures = { yankee }
 	capital = STATE_INDIANA
 }
 
@@ -176,7 +176,7 @@ ILL = {
 
 	tier = principality
 
-	cultures = { dixie }
+	cultures = { yankee }
 	capital = STATE_ILLINOIS
 }
 
@@ -187,7 +187,7 @@ OHI = {
 
 	tier = principality
 
-	cultures = { dixie }
+	cultures = { yankee }
 	capital = STATE_OHIO
 }
 
@@ -240,7 +240,7 @@ CLU = {
 	capital = STATE_MASSACHUSETTS
 }
 
-#cabotia (yanke nations)
+#cabotia (dixe nations)
 CAD = {
 	#TODO
 	color = { 147 130 110 }
@@ -263,5 +263,17 @@ INB = {
 		tier = grand_principality	
 		
 		cultures = { algonquian dakota }
+		capital = STATE_MICHIGAN
+}
+
+#canida columbia cabotia union / new europe (NA union)
+CCC = {
+		color = { 147 130 110 }
+
+		country_type = recognized
+		
+		tier = hegemony	
+			
+		cultures = { yankee dixie anglo_canadian franco_canadian }
 		capital = STATE_MICHIGAN
 }

@@ -10,3 +10,15 @@ dtnw_deal_with_mexico:0 "Ask to become a mexican protectorate when mexico is rea
 dtnw_deal_with_mexico_desc:0 "The USA is clearly a dying nation and the only way to maintain self governance is to join with Mexico"
 dtnw_stop_deal_with_mexico:0 "Revoke our agrement to be a mexican protectorate"
 dtnw_stop_deal_with_mexico_desc:0 "Perhaps we should forge our own path with-out mexico"
+#unite NA
+clu_unite_clu:0 "Unite Columbia"
+clu_unite_clu_desc:0 "The dream of Columbiana unity must be realized. By becoming economically dominant over our fellow colonies while maintaining good relations with the central government, we can propose the annexation of one of our neighbours."
+
+clu_unite_gbr:0 "Unite Columbia"
+clu_unite_gbr_desc:0 "We desire that all of the Columbiana colonies be merged into one, and for a Columbiana nation to emerge. To achieve this we must convince the local colonial administrations that unification is in their best interests.""
+
+cad_unite_cad:0 "Unite Cabotia"
+cad_unite_cad_desc:0 "The dream of Cabotiana unity must be realized. By becoming economically dominant over our fellow colonies while maintaining good relations with the central government, we can propose the annexation of one of our neighbours."
+
+cad_unite_gbr:0 "Unite Cabotia"
+cad_unite_gbr_desc:0 "We desire that all of the Cabotiana colonies be merged into one, and for a Cabotiana nation to emerge. To achieve this we must convince the local colonial administrations that unification is in their best interests."

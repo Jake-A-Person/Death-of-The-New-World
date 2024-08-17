@@ -1,14 +1,12 @@
-﻿gov_indian_buff_life_term = {
+﻿#Its working its workinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+gov_indian_buff_life_term = {
 	transfer_of_power = dictatorial
 
 	male_ruler = "RULER_TITLE_SUPREME_CHIEF"
 	female_ruler = "RULER_TITLE_SUPREME_CHIEF"
 	
 	possible = {
-		exists = c:INB
-		c:INB = ROOT
-
-		#is_subject = yes
+		AND = {exists = c:INB c:INB = ROOT}
 
 
 		has_law = law_type:law_presidential_republic
@@ -31,9 +29,7 @@ gov_indian_buff_elected_term = {
 	
 	possible = {
 		exists = c:INB
-		c:INB = ROOT
-
-		#is_subject = yes
+		ROOT = c:INB
 
 		has_law = law_type:law_presidential_republic
 		country_has_voting_franchise = yes
