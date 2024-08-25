@@ -262,17 +262,18 @@ KUK = {
 	}
 }
 
-FSA = {
-	use_culture_states = yes
+#MODED
+# FSA = {
+# 	use_culture_states = yes
 
-	required_states_fraction = 0.75	
+# 	required_states_fraction = 0.75	
 	
-	ai_will_do = { always = yes }
+# 	ai_will_do = { always = yes }
 
-	possible = {
-		has_law = law_type:law_slavery_banned
-	}
-}
+# 	possible = {
+# 		has_law = law_type:law_slavery_banned
+# 	}
+# }
 
 CZH = {
 	use_culture_states = yes

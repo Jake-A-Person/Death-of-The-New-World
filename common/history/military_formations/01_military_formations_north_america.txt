@@ -7,12 +7,6 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TENNESSEE
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SOUTH_CAROLINA
 				count = 1
 			}
@@ -26,6 +20,32 @@
 		combat_unit = {
 			type = unit_type:combat_unit_type_line_infantry
 			state_region = s:STATE_VIRGINIA
+			count = 1
+		}
+	}
+	}
+
+	c:INB ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_the_midwest
+			name = Regular_Army
+		combat_unit = {
+			type = unit_type:combat_unit_type_line_infantry
+			state_region = s:STATE_WISCONSIN
+			count = 3
+		}
+	}
+	}
+
+	c:TEN ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_the_midwest
+			name = Regular_Army
+		combat_unit = {
+			type = unit_type:combat_unit_type_line_infantry
+			state_region = s:STATE_TENNESSEE
 			count = 1
 		}
 	}

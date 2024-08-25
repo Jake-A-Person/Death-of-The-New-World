@@ -2,7 +2,7 @@
 WAH = { # Washington
 	flag_definition = {
 		coa = WAH
-		#subject_canton = WAH
+		subject_canton = WAH
 		priority = 1
 	}
 }
@@ -164,10 +164,47 @@ CLU = {
 
 CCC = {
 	flag_definition = {
-		coa = CCC_full_subject
-		subject_canton = CCC_full_subject
+		coa = CCC
+		subject_canton = CCC
 		priority = 1
 	}
+
+	flag_definition = {
+		coa = CCC_monarchy
+		subject_canton = CCC_monarchy
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+		priority = 100
+	}
+
+	flag_definition = {
+		coa = CCC_communist
+		subject_canton = CCC_communist
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+		priority = 5000
+	}
+
+	flag_definition = {
+		coa = CCC_communist
+		subject_canton = CCC_communist
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+		priority = 5000
+	}
+
+	flag_definition = {
+		coa = CCC_anarchist
+		subject_canton = CCC_anarchist
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+		priority = 10000
+	}
+
 
 	flag_definition = {
 		coa = CCC_full_subject
@@ -177,7 +214,7 @@ CCC = {
 		trigger = { 
 			coa_def_colonial_ensign_trigger = yes
 		}
-		priority = 1
+		priority = 1000
 	}
 
 	flag_definition = {
@@ -189,7 +226,7 @@ CCC = {
 			coa_def_colonial_ensign_trigger = yes
 			coa_def_dtnw_cad_can_trigger = yes
 		}
-		priority = 100
+		priority = 2000
 	}
 
 	flag_definition = {
@@ -201,7 +238,7 @@ CCC = {
 			coa_def_dtnw_cad_clu_trigger = yes
 			coa_def_colonial_ensign_trigger = yes
 		}
-		priority = 100
+		priority = 2000
 	}
 
 	flag_definition = {
@@ -213,6 +250,6 @@ CCC = {
 			coa_def_dtnw_can_clu_trigger = yes
 			coa_def_colonial_ensign_trigger = yes
 		}
-		priority = 100
+		priority = 2000
 	}
 }

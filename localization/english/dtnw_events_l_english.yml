@@ -23,10 +23,17 @@ dtnw_sick_us.1.d:0 "While the US theoretically remains as a continuous nation in
 dtnw_sick_us.1.f:0 "The second war of independence shock the union to its core what was thought to be a quick war to rapidly take British north America instead lasted 4 long years. While the territorial changes were relatively minor only losing new England and about half of the Louisiana territory it shook many people's belief in the union. In order to preserve the union massive power was devolved to each state turning them into practically independent countries. A few sates on the east coast grouped together to form the union of Greater Washington which is all that is left of a central government."
 dtnw_sick_us.1.a:0 "Onwards"
 
+#US civil war
+dtnw_sick_us.2.t:0 "Federal Law Passed"
+dtnw_sick_us.2.d:0 "To change our laws or leave the union."
+dtnw_sick_us.2.f:0 "Congress has passed a new law with a majority vote. This new law is not compatible with our current local state legislation."
+dtnw_sick_us.2.a:0 "We shall comply with this new law"
+dtnw_sick_us.2.b:0 "We must form a better union"
+
 #mexico war
-dtnw_sick_us.4.t:0 "Succession"
-dtnw_sick_us.4.d:0  "Some of the eastern states have succeeded from the union to mexico"
-dtnw_sick_us.4.f:0  "The government of some of the eastern states in the union have declared their intention to join with Mexico as protectorates citing slavery and security. Mexico has accepted sovereignty of said states. There are a small number of people who have succeeded from the now Mexican protectorates forming a loyalists union state."
+dtnw_sick_us.4.t:0 "Secession"
+dtnw_sick_us.4.d:0  "Some of the eastern states have seceded from the union to mexico"
+dtnw_sick_us.4.f:0  "The government of some of the eastern states in the union have declared their intention to join with Mexico as protectorates citing slavery and security. Mexico has accepted sovereignty of said states. There are a small number of people who have seceded from the now Mexican protectorates forming a loyalists union state."
 dtnw_sick_us.4.a:0 "This means war"
 
 #NEN events
@@ -35,3 +42,19 @@ dtnw_nen.1.d:0 "Are we canadian or somthing else..."
 dtnw_nen.1.f:0 "A combination of public protest and Anglo-Canadian arms ripped New England away from the US and into Englands sphere as a self-governing colony. But now the question arise over wheather we should become part of a future Canadian confederation or if we are something else and seek a different path in the years to come"
 dtnw_nen.1.a:0 "We are Canadian"
 dtnw_nen.1.b:0 "We are Yankke"
+
+#clu cad unification coped from canida unfication
+dtnw_clu_cad.1.t:0 "Union with [SCOPE.sCountry('canada_annex_scope').GetName]"
+ dtnw_clu_cad.1.f:0 "With every document signed and stamped, we come one step closer to building a nation. The colonies haven't always seen eye-to-eye, but the people of Columbia are resolute in their determination to see this through."
+ dtnw_clu_cad.1.d:0 "[SCOPE.sCharacter('canada_overlord_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('canada_overlord_ruler').GetFullName] has signed into law the union between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('canada_annex_scope').GetName]. This marks a great victory in our goal of unifying all of Columbia."
+dtnw_clu_cad.1.a:0 "God save the [SCOPE.sCharacter('canada_overlord_ruler').GetPrimaryRoleTitle]!"
+
+ dtnw_clu_cad.2.t:0 "The Unification of [SCOPE.sCountry('canada_scope_1').GetName] and [SCOPE.sCountry('canada_scope_2').GetName]"
+ dtnw_clu_cad.2.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]  has signed into law the union between [SCOPE.sCountry('canada_scope_1').GetName] and [SCOPE.sCountry('canada_scope_2').GetName]. This marks a great victory in our goal of unifying all of Columbia."
+ dtnw_clu_cad.2.a:0 "God save the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]!"
+
+ dtnw_clu_cad.3.d:0 "[SCOPE.sCharacter('canada_overlord_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('canada_overlord_ruler').GetFullName] has signed into law the union between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('canada_annex_scope').GetName]. This marks a great victory in our goal of unifying all of Cabotia."
+
+ dtnw_clu_cad.3.f:0 "With every document signed and stamped, we come one step closer to building a nation. The colonies haven't always seen eye-to-eye, but the people of Cabotia are resolute in their determination to see this through."
+
+ dtnw_clu_cad.4.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]  has signed into law the union between [SCOPE.sCountry('canada_scope_1').GetName] and [SCOPE.sCountry('canada_scope_2').GetName]. This marks a great victory in our goal of unifying all of Cabotia"

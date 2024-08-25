@@ -39,12 +39,12 @@ dtnw_clu_cad.1 = {
 					this.gdp < root.gdp
 				}
 			}
-			owner = { save_scope_as = clu_annex_scope }
+			owner = { save_scope_as = canada_annex_scope }
 		}
 		top_overlord = {
-			save_scope_as = clu_overlord_country
+			save_scope_as = canada_overlord_country
 			ruler = {
-				save_scope_as = clu_overlord_ruler
+				save_scope_as = canada_overlord_ruler
 			}
 		}
 	}
@@ -55,15 +55,15 @@ dtnw_clu_cad.1 = {
 		hidden_effect = {
 			every_state = {
 				limit = {
-					has_claim_by = scope:clu_annex_scope
+					has_claim_by = scope:canada_annex_scope
 				}
 				state_region = {
-					remove_claim = scope:clu_annex_scope
+					remove_claim = scope:canada_annex_scope
 					add_claim = ROOT
 				}
 			}
 		}
-		annex_with_incorporation = scope:clu_annex_scope
+		annex_with_incorporation = scope:canada_annex_scope
 	}
 }
 
@@ -98,7 +98,7 @@ dtnw_clu_cad.2 = {
 				relations:root >= relations_threshold:amicable
 				is_ai = yes
 			}
-			save_scope_as = clu_scope_1
+			save_scope_as = canada_scope_1
 		}
 		random_subject_or_below = {
 			limit = {
@@ -108,10 +108,10 @@ dtnw_clu_cad.2 = {
 				relations:root >= relations_threshold:amicable
 				is_ai = yes
 				NOT = {
-					scope:clu_scope_1 = THIS
+					scope:canada_scope_1 = THIS
 				}
 			}
-			save_scope_as = clu_scope_2
+			save_scope_as = canada_scope_2
 		}
 	}
 
@@ -120,173 +120,167 @@ dtnw_clu_cad.2 = {
 		default_option = yes
 		if = {
 			limit = {
-				scope:clu_scope_1.gdp > scope:clu_scope_2.gdp
+				scope:canada_scope_1.gdp > scope:canada_scope_2.gdp
 			}
 			hidden_effect = {
 				every_state = {
 					limit = {
-						has_claim_by = scope:clu_scope_2
+						has_claim_by = scope:canada_scope_2
 					}
 					state_region = {
-						remove_claim = scope:clu_scope_2
-						add_claim = scope:clu_scope_1
+						remove_claim = scope:canada_scope_2
+						add_claim = scope:canada_scope_1
 					}
 				}
 			}
-			scope:clu_scope_1 = {
-				annex_with_incorporation = scope:clu_scope_2
+			scope:canada_scope_1 = {
+				annex_with_incorporation = scope:canada_scope_2
 			}
 		}
 		else = {
 			hidden_effect = {
 				every_state = {
 					limit = {
-						has_claim_by = scope:clu_scope_1
+						has_claim_by = scope:canada_scope_1
 					}
 					state_region = {
-						remove_claim = scope:clu_scope_1
-						add_claim = scope:clu_scope_2
+						remove_claim = scope:canada_scope_1
+						add_claim = scope:canada_scope_2
 					}
 				}
 			}
-			scope:clu_scope_2 = {
-				annex_with_incorporation = scope:clu_scope_1
+			scope:canada_scope_2 = {
+				annex_with_incorporation = scope:canada_scope_1
 			}
 		}
 	}
 }
 
-# # Australian colony absorbs a poorer neighbor
-# dtnw_clu_cad.3 = {
-# 	type = country_event
-# 	placement = ROOT
+# dixie colony absorbs a poorer neighbor
+dtnw_clu_cad.3 = {
+	type = country_event
+	placement = ROOT
 
-# 	title = dtnw_clu_cad.1.t
-# 	desc = dtnw_clu_cad.3.d
-# 	flavor = dtnw_clu_cad.3.f
+	title = dtnw_clu_cad.1.t
+	desc = dtnw_clu_cad.3.d
+	flavor = dtnw_clu_cad.3.f
 
-# 	event_image = {
-# 		video = "ep1_transfer_of_authority"
-# 	}
+	event_image = {
+		video = "ep1_transfer_of_authority"
+	}
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-# 	duration = 3
+	duration = 3
 
-# 	trigger = {
-# 	}
+	trigger = {
+	}
 
-# 	immediate = {
-# 		random_neighbouring_state = {
-# 			limit = {
-# 				owner = {
-# 					is_ai = yes
-# 					relations:root >= relations_threshold:amicable
-# 					OR = {
-# 						country_has_primary_culture = cu:australian
-# 						country_has_primary_culture = cu:maori
-# 						country_has_primary_culture = cu:aborigine
-# 					}
-# 					is_subject = yes
-# 					NOT = { THIS = ROOT }
-# 					top_overlord = {
-# 						THIS = root.top_overlord
-# 					}
-# 					this.gdp < root.gdp
-# 				}
-# 			}
-# 			owner = { save_scope_as = canada_annex_scope }
-# 		}
-# 		top_overlord = {
-# 			save_scope_as = canada_overlord_country
-# 			ruler = {
-# 				save_scope_as = canada_overlord_ruler
-# 			}
-# 		}
-# 	}
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_ai = yes
+					relations:root >= relations_threshold:amicable
 
-# 	option = {
-# 		name = dtnw_clu_cad.1.a
-# 		default_option = yes
-# 		annex_with_incorporation = scope:canada_annex_scope
-# 	}
-# }
+					country_has_primary_culture = cu:dixie
+					
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+			owner = { save_scope_as = canada_annex_scope }
+		}
+		top_overlord = {
+			save_scope_as = canada_overlord_country
+			ruler = {
+				save_scope_as = canada_overlord_ruler
+			}
+		}
+	}
 
-# # Britain mashes 2 Australians together
-# dtnw_clu_cad.4 = {
-# 	type = country_event
-# 	placement = ROOT
+	option = {
+		name = dtnw_clu_cad.1.a
+		default_option = yes
+		annex_with_incorporation = scope:canada_annex_scope
+	}
+}
 
-# 	title = dtnw_clu_cad.2.t
-# 	desc = dtnw_clu_cad.4.d
-# 	flavor = dtnw_clu_cad.3.f
+# Britain mashes 2 Australians together
+dtnw_clu_cad.4 = {
+	type = country_event
+	placement = ROOT
 
-# 	event_image = {
-# 		video = "ep1_power_blocs"
-# 	}
+	title = dtnw_clu_cad.2.t
+	desc = dtnw_clu_cad.4.d
+	flavor = dtnw_clu_cad.3.f
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	event_image = {
+		video = "ep1_power_blocs"
+	}
 
-# 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	duration = 3
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
-# 	trigger = {
-# 	}
+	duration = 3
 
-# 	immediate = {
-# 		ruler = {
-# 			save_scope_as = australia_overlord_ruler
-# 		}
-# 		random_subject_or_below = {
-# 			limit = {
-# 				OR = {
-# 					country_has_primary_culture = cu:australian
-# 					country_has_primary_culture = cu:maori
-# 					country_has_primary_culture = cu:aborigine
-# 				}
-# 				relations:root >= relations_threshold:amicable
-# 				is_ai = yes
-# 			}
-# 			save_scope_as = canada_scope_1
-# 		}
-# 		random_subject_or_below = {
-# 			limit = {
-# 				OR = {
-# 					country_has_primary_culture = cu:australian
-# 					country_has_primary_culture = cu:maori
-# 					country_has_primary_culture = cu:aborigine
-# 				}
-# 				relations:root >= relations_threshold:amicable
-# 				NOT = {
-# 					scope:canada_scope_1 = THIS
-# 				}
-# 				is_ai = yes
-# 			}
-# 			save_scope_as = canada_scope_2
-# 		}
-# 	}
+	trigger = {
+	}
 
-# 	option = {
-# 		name = dtnw_clu_cad.2.a
-# 		default_option = yes
-# 		if = {
-# 			limit = {
-# 				scope:canada_scope_1.gdp > scope:canada_scope_2.gdp
-# 			}
-# 			scope:canada_scope_1 = {
-# 				annex_with_incorporation = scope:canada_scope_2
-# 			}
-# 		}
-# 		else = {
-# 			scope:canada_scope_2 = {
-# 				annex_with_incorporation = scope:canada_scope_1
-# 			}
-# 		}
-# 	}
-# }
+	immediate = {
+		ruler = {
+			save_scope_as = australia_overlord_ruler
+		}
+		random_subject_or_below = {
+			limit = {
+
+				country_has_primary_culture = cu:dixie
+
+				relations:root >= relations_threshold:amicable
+				is_ai = yes
+			}
+			save_scope_as = canada_scope_1
+		}
+		random_subject_or_below = {
+			limit = {
+
+				country_has_primary_culture = cu:dixie
+
+				relations:root >= relations_threshold:amicable
+				NOT = {
+					scope:canada_scope_1 = THIS
+				}
+				is_ai = yes
+			}
+			save_scope_as = canada_scope_2
+		}
+	}
+
+	option = {
+		name = dtnw_clu_cad.2.a
+		default_option = yes
+		if = {
+			limit = {
+				scope:canada_scope_1.gdp > scope:canada_scope_2.gdp
+			}
+			scope:canada_scope_1 = {
+				annex_with_incorporation = scope:canada_scope_2
+			}
+		}
+		else = {
+			scope:canada_scope_2 = {
+				annex_with_incorporation = scope:canada_scope_1
+			}
+		}
+	}
+}
 
 # # Canada complete event for Canada
 # dtnw_clu_cad.5 = {

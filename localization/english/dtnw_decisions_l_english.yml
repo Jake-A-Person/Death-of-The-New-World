@@ -22,3 +22,15 @@ cad_unite_cad_desc:0 "The dream of Cabotiana unity must be realized. By becoming
 
 cad_unite_gbr:0 "Unite Cabotia"
 cad_unite_gbr_desc:0 "We desire that all of the Cabotiana colonies be merged into one, and for a Cabotiana nation to emerge. To achieve this we must convince the local colonial administrations that unification is in their best interests."
+
+#greater NA  union
+#oh boy
+can_clu_cad_unite:0 "Unite Canada, Columbia and Cabotia"
+can_clu_cad_unite_desc:0 "We desire a union between Canada, Columbia and Cabotia to streamline our colonial governance over the new world"
+clu_cad_unite:0 "Unite Columbia and Cabotia"
+clu_cad_unite_desc:0 "We desire a union between Columbia and Cabotia to streamline our colonial governance over the new world"
+clu_can_unite:0 "Unite Columbia and Canada"
+clu_can_unite_desc:0 "We desire a union between Columbia and Canada to streamline our colonial governance over the new world"
+#so cursed
+cad_can_unite:0 "Unite Cabotia and Canada"
+cad_can_unite_desc:0 "We desire a union between Cabotia and Canada to streamline our colonial governance over the new world"

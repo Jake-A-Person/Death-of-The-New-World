@@ -16,7 +16,15 @@ clu_test_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_add = 50
 }
-cab_test_modifier = {
+cad_test_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_add = 50
+}
+
+civil_war_nation={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+}
+
+fed_law_recent={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 }

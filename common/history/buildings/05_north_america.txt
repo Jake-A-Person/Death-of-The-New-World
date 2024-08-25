@@ -604,11 +604,11 @@
 		}
 	}
 	s:STATE_MINNESOTA={
-		region_state:LKT={
+		region_state:INB={
 		}
 	}
 	s:STATE_WISCONSIN={
-		region_state:LKT={
+		region_state:INB={
 		}
 	}
 	s:STATE_INDIANA={
@@ -676,15 +676,17 @@
 				activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 		}
+		region_state:INB={
+		}
 	}
 	s:STATE_MICHIGAN={
-		region_state:UOM={
+		region_state:INB={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:UOM"
+						country="c:INB"
 						levels=1
 						region="STATE_MICHIGAN"
 					}
@@ -697,7 +699,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:UOM"
+						country="c:INB"
 						levels=4
 						region="STATE_MICHIGAN"
 					}
@@ -710,7 +712,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:UOM"
+						country="c:INB"
 						levels=1
 						region="STATE_MICHIGAN"
 					}
@@ -1214,13 +1216,13 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 		}
+		}
 		region_state:WAH={
 
 		}
 
 		region_state:SML={
 
-		}
 		}
 	}
 	s:STATE_GEORGIA={
@@ -1778,6 +1780,8 @@
 				reserves=1
 				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			}
+		}
+		region_state:INB = {
 		}
 	}
 	s:STATE_RHODE_ISLAND={

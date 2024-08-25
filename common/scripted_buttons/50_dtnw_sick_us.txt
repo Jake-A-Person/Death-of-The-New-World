@@ -1,0 +1,1735 @@
+﻿je_sick_us_federal_law_dop_oli_sb = {
+	name = "je_sick_us_federal_law_dop_oli_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		OR = {
+			has_law = law_type:law_oligarchy 
+			has_law = law_type:law_technocracy
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_single_party_state
+			has_law = law_type:law_anarchy
+		}
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+				any_subject_or_below = {
+					filter = {
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+					not = {
+						OR = {
+							has_law = law_type:law_oligarchy 
+							has_law = law_type:law_technocracy
+							has_law = law_type:law_autocracy
+							has_law = law_type:law_single_party_state
+							has_law = law_type:law_anarchy
+						}
+					}			
+					count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_subject_or_below = {
+			OR = {
+				has_law = law_type:law_oligarchy 
+				has_law = law_type:law_technocracy
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_single_party_state
+				has_law = law_type:law_anarchy
+			}
+			filter = {
+				OR = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+					}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			OR = {
+				has_law = law_type:law_oligarchy 
+				has_law = law_type:law_technocracy
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_single_party_state
+				has_law = law_type:law_anarchy
+			}			
+			percent < 1
+		}	
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {				
+					OR = {
+						has_law = law_type:law_oligarchy 
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_single_party_state
+						has_law = law_type:law_anarchy
+					}
+				}
+			}
+		trigger_event = dtnw_sick_us.5
+		}
+	}
+}
+
+je_sick_us_federal_law_dop_land_sb = {
+	name = "je_sick_us_federal_law_dop_land_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		has_law = law_type:law_landed_voting
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_landed_voting
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {has_law = law_type:law_landed_voting}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_landed_voting
+			percent < 1
+		}	
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {				
+					has_law = law_type:law_landed_voting
+				}
+			}
+		trigger_event = dtnw_sick_us.6
+		}
+	}
+}
+
+je_sick_us_federal_law_dop_wel_sb = {
+	name = "je_sick_us_federal_law_dop_wel_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		has_law = law_type:law_wealth_voting
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_wealth_voting
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {has_law = law_type:law_wealth_voting}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_wealth_voting
+			percent < 1
+		}	
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {				
+					has_law = law_type:law_wealth_voting
+				}
+			}
+		trigger_event = dtnw_sick_us.7
+		}
+	}
+}
+
+je_sick_us_federal_law_dop_suf_sb = {
+	name = "je_sick_us_federal_law_dop_suf_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		OR = {
+			has_law = law_type:law_census_voting
+			has_law = law_type:law_universal_suffrage	
+		}	
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					OR = {
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage	
+					}	
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				OR = {
+					has_law = law_type:law_census_voting
+					has_law = law_type:law_universal_suffrage	
+				}	
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			OR = {
+				has_law = law_type:law_census_voting
+				has_law = law_type:law_universal_suffrage	
+			}	
+			percent < 1
+		}		
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {				
+					OR = {
+						has_law = law_type:law_census_voting
+						has_law = law_type:law_universal_suffrage	
+					}				}
+			}
+		trigger_event = dtnw_sick_us.8
+		}
+	}
+}
+
+sick_us_federal_law_cit_ethno_sb= {
+	name = "sick_us_federal_law_cit_ethno_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_ethnostate}
+
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_ethnostate
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_ethnostate	
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_ethnostate	
+			percent < 1
+		}		
+	}
+	effect = {
+		
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+						OR = {
+								country_has_primary_culture = cu:yankee
+								country_has_primary_culture = cu:dixie
+								}
+						not = {has_law = law_type:law_ethnostate}
+					}
+			trigger_event = dtnw_sick_us.9
+			}
+	}
+}
+
+sick_us_federal_law_cit_nat_sb= {
+	name = "sick_us_federal_law_cit_nat_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_national_supremacy}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_national_supremacy
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_national_supremacy	
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}	
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_national_supremacy
+			percent < 1
+		}	
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_national_supremacy}
+					}
+			trigger_event = dtnw_sick_us.10
+			}
+	}
+}
+
+sick_us_federal_law_cit_seg_sb= {
+	name = "sick_us_federal_law_cit_seg_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_racial_segregation}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_racial_segregation
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_racial_segregation	
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_racial_segregation
+			percent < 1
+		}	
+	}
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_racial_segregation}
+					}
+			trigger_event = dtnw_sick_us.11
+			}
+	}
+}
+
+sick_us_federal_law_cit_cult_sb= {
+	name = "sick_us_federal_law_cit_cult_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		or = {
+			has_law = law_type:law_cultural_exclusion
+			has_law = law_type:law_multicultural
+		}	
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					or = {
+						has_law = law_type:law_cultural_exclusion
+						has_law = law_type:law_multicultural
+					}	
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				or = {
+					has_law = law_type:law_cultural_exclusion
+					has_law = law_type:law_multicultural
+				}				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			or = {
+				has_law = law_type:law_cultural_exclusion
+				has_law = law_type:law_multicultural
+			}	
+			percent < 1
+		}		
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {		
+								or = {
+									has_law = law_type:law_cultural_exclusion
+									has_law = law_type:law_multicultural
+							}	
+						}
+					}
+			trigger_event = dtnw_sick_us.12
+			}
+	}
+}
+
+sick_us_federal_law_econ_bad_sb= {
+	name = "sick_us_federal_law_econ_bad_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {
+		or = {
+			has_law = law_type:law_agrarianism
+			has_law = law_type:law_traditionalism
+			has_law = law_type:law_industry_banned
+		}	
+	}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					or = {
+					has_law = law_type:law_agrarianism
+					has_law = law_type:law_traditionalism
+					has_law = law_type:law_industry_banned
+					}		
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				or = {
+					has_law = law_type:law_agrarianism
+					has_law = law_type:law_traditionalism
+					has_law = law_type:law_industry_banned
+				}				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			or = {
+				has_law = law_type:law_agrarianism
+				has_law = law_type:law_traditionalism
+				has_law = law_type:law_industry_banned
+			}		
+			percent < 1
+		}		
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {		
+								or = {
+									has_law = law_type:law_agrarianism
+									has_law = law_type:law_traditionalism
+									has_law = law_type:law_industry_banned
+								}	
+						}
+					}
+			trigger_event = dtnw_sick_us.13
+			}
+	}
+}
+
+sick_us_federal_law_econ_int_sb= {
+	name = "sick_us_federal_law_econ_int_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_interventionism}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_interventionism
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_interventionism				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_interventionism				
+			percent < 1
+		}		
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_interventionism}
+					}
+			trigger_event = dtnw_sick_us.14
+			}
+	}
+}
+
+sick_us_federal_law_econ_laz_sb= {
+	name = "sick_us_federal_law_econ_laz_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_laissez_faire}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_laissez_faire
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_laissez_faire				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+			has_law = law_type:law_laissez_faire				
+			percent < 1
+		}	
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_laissez_faire}
+					}
+			trigger_event = dtnw_sick_us.15
+			}
+	}
+}
+
+#just in-case some one would want to make a serfdom usa why?
+sick_us_federal_law_land_sef_sb= {
+	name = "sick_us_federal_law_land_sef_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_serfdom}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_serfdom
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_serfdom				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_serfdom				
+			percent < 1
+		}	
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_serfdom}
+					}
+			trigger_event = dtnw_sick_us.16
+			}
+	}
+}
+
+sick_us_federal_law_land_ten_sb= {
+	name = "sick_us_federal_law_land_ten_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_tenant_farmers}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_tenant_farmers
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_tenant_farmers				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_tenant_farmers				
+			percent < 1
+		}	
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_tenant_farmers}
+					}
+			trigger_event = dtnw_sick_us.17
+		}
+	}
+}
+
+sick_us_federal_law_land_com_sb= {
+	name = "sick_us_federal_law_land_com_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_commercialized_agriculture}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_commercialized_agriculture
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_commercialized_agriculture				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_commercialized_agriculture				
+			percent < 1
+		}		
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_commercialized_agriculture}
+					}
+			trigger_event = dtnw_sick_us.18
+		}
+	}
+}
+
+sick_us_federal_law_land_home_sb= {
+	name = "sick_us_federal_law_land_home_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_homesteading}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_homesteading
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {		
+				has_law = law_type:law_homesteading				
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}	
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_homesteading				
+			percent < 1
+		}	
+	}
+	
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+			every_subject_or_below = {
+					limit = {
+					OR = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+							}
+							not = {has_law = law_type:law_homesteading}
+					}
+			trigger_event = dtnw_sick_us.19
+		}
+	}
+}
+
+
+je_sick_us_federal_law_slave_ban_sb = {
+	name = "je_sick_us_federal_law_slave_ban_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = {has_law = law_type:law_slavery_banned}
+
+	ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_slavery_banned
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		any_state = {
+			owner ?= {has_law = law_type:law_slavery_banned}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			has_law = law_type:law_slavery_banned				
+			percent < 1
+		}	
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {has_law = law_type:law_slavery_banned}
+			}
+		trigger_event = dtnw_sick_us.2
+		}
+	}
+}
+
+je_sick_us_federal_law_slave_allow_sb = {
+	name = "je_sick_us_federal_law_slave_allow_sb"
+	desc = "je_sick_us_federal_law_desc"
+
+	visible = { 
+		not = {
+			has_law = law_type:law_slavery_banned
+		}				
+	 }
+
+	 ai_chance = {
+		modifier = {
+			trigger = {
+			any_subject_or_below = {
+				filter = {
+					or = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+				not = {
+					has_law = law_type:law_slavery_banned
+				}			
+				count < 3
+				}
+			}
+			add = 100
+		}
+		modifier = {
+			trigger = {
+				#idk
+				game_date > 1851.7.2
+			}
+			add = 50
+		}
+		base = 0
+	}
+
+
+	possible = {
+		scope:federal_overlord = {
+			not ?= {
+				has_modifier = fed_law_recent
+			}
+		}
+		OR = {
+			has_law = law_type:law_debt_slavery
+			has_law = law_type:law_slave_trade
+		}
+		any_state = {
+			owner ?= {
+				OR = {
+					has_law = law_type:law_debt_slavery
+					has_law = law_type:law_slave_trade
+				}	
+			}
+			filter = {
+				or = {
+					owner = scope:federal_overlord
+					owner ?= {
+						custom_tooltip = {
+							text =je_sick_us_federal_law_is_subject
+							overlord = scope:federal_overlord
+						}
+						or = {
+							country_has_primary_culture = cu:yankee
+							country_has_primary_culture = cu:dixie
+						}
+					}
+				}
+			}
+			percent > 0.5
+		}
+		any_subject_or_below = {
+			filter = {
+				or = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+
+			OR = {
+				has_law = law_type:law_debt_slavery
+				has_law = law_type:law_slave_trade
+			}				
+			percent < 1
+		}		
+	}
+
+	effect = {
+		scope:federal_overlord = {
+			add_modifier = {
+				name = fed_law_recent
+				years = 5
+			}
+		}
+
+		every_subject_or_below = {
+			limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				}
+				not = {
+					OR = {
+						has_law = law_type:law_debt_slavery
+						has_law = law_type:law_slave_trade
+					}	
+				}
+			}
+		trigger_event = dtnw_sick_us.3
+		}
+	}
+}

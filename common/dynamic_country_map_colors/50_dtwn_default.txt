@@ -1,0 +1,9 @@
+﻿roman_rome = {
+	color = "roman_red"
+
+	possible = {
+		exists = c:CCC
+		THIS = c:CCC
+		has_law = law_type:law_monarchy
+	}
+}

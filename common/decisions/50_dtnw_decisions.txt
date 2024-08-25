@@ -92,6 +92,7 @@ dtnw_accecpt_former_states = {
 	is_shown = {
 		exists = c:MEX
 		this = c:MEX
+		not = {has_variable = accecpt_former_states}
 	}
 
 	possible = {
@@ -106,10 +107,12 @@ dtnw_accecpt_former_states = {
 				has_modifier = union_with_mexico
 			}
 		}
-
 	}
 
 	when_taken = {
+		set_variable = {
+			name = accecpt_former_states
+		}
 		if = {
 			limit = { c:LOU = {	has_modifier = union_with_mexico } }
 		c:LOU = {

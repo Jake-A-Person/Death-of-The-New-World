@@ -48,10 +48,6 @@
     		type = protectorate
     	}		
 		create_diplomatic_pact = {
-    		country = c:UOM
-    		type = protectorate
-    	}
-		create_diplomatic_pact = {
     		country = c:MIS
     		type = protectorate
     	}
@@ -105,10 +101,6 @@
     		country = c:NYR
     		type = grant_own_market
     	}		
-		create_diplomatic_pact = {
-    		country = c:UOM
-    		type = grant_own_market
-    	}
 		create_diplomatic_pact = {
     		country = c:MIS
     		type = grant_own_market

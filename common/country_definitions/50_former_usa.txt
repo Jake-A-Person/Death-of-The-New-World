@@ -41,7 +41,7 @@ WAH = {
 
 	country_type = colonial
 
-	tier = grand_principality
+	tier = kingdom
 	
 	cultures = { dixie }
 	capital = STATE_DISTRICT_OF_COLUMBIA
@@ -268,7 +268,7 @@ INB = {
 
 #canida columbia cabotia union / new europe (NA union)
 CCC = {
-		color = { 147 130 110 }
+		color = "european_blue"
 
 		country_type = recognized
 		

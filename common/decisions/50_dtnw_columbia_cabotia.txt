@@ -3,6 +3,11 @@ clu_unite_clu = {
 	is_shown = {
 		country_has_primary_culture = cu:yankee
 		is_subject = yes
+		overlord = {
+			capital = {
+				state_is_in_north_america = no
+			}	
+		}
 		any_neighbouring_state = {
 			owner = {
 				country_has_primary_culture = cu:yankee
@@ -42,7 +47,7 @@ clu_unite_clu = {
 	when_taken = {
 		custom_tooltip = unite_clu_tt
 		hidden_effect = {
-			trigger_event = { id = can_aus.1 popup = yes }
+			trigger_event = { id = dtnw_clu_cad.1 popup = yes }
 		}
 		add_modifier = {
 			name = clu_test_modifier
@@ -61,6 +66,9 @@ clu_unite_clu = {
 
 clu_unite_gbr = {
 	is_shown = {
+		capital = {
+			state_is_in_north_america = no
+		}
 		any_subject_or_below = {
 
 			country_has_primary_culture = cu:yankee
@@ -88,7 +96,7 @@ clu_unite_gbr = {
 	when_taken = {
 		custom_tooltip = unite_clu_tt
 		hidden_effect = {
-			trigger_event = { id = can_aus.2 popup = yes }
+			trigger_event = { id = dtnw_clu_cad.2 popup = yes }
 		}
 		add_modifier = {
 			name = clu_test_modifier
@@ -111,6 +119,11 @@ cad_unite_cad = {
 		country_has_primary_culture = cu:dixie
 
 		is_subject = yes
+		overlord = {
+			capital = {
+				state_is_in_north_america = no
+			}	
+		}
 		any_neighbouring_state = {
 			owner = {
 
@@ -156,7 +169,7 @@ cad_unite_cad = {
 	when_taken = {
 		custom_tooltip = unite_cad_tt
 		hidden_effect = {
-			trigger_event = { id = can_aus.3 popup = yes }
+			trigger_event = { id = dtnw_clu_cad.3 popup = yes }
 		}
 		add_modifier = {
 			name = cad_test_modifier
@@ -175,6 +188,9 @@ cad_unite_cad = {
 
 cad_unite_gbr = {
 	is_shown = {
+		capital = {
+			state_is_in_north_america = no
+		}
 		any_subject_or_below = {
 
 			country_has_primary_culture = cu:dixie
@@ -203,7 +219,7 @@ cad_unite_gbr = {
 	when_taken = {
 		custom_tooltip = unite_cad_tt
 		hidden_effect = {
-			trigger_event = { id = can_aus.4 popup = yes }
+			trigger_event = { id = dtnw_clu_cad.4 popup = yes }
 		}
 		add_modifier = {
 			name = cad_test_modifier
@@ -235,6 +251,9 @@ can_clu_cad_unite = {
 			exists = c:CAN
 			c:CLU = {
 				is_subject_of = root
+			}
+			not = {
+				exists = c:CCC
 			}	
 		}
 	}
@@ -265,6 +284,14 @@ can_clu_cad_unite = {
 				change_tag = CCC
 			}
 		}
+	c:CCC = {
+		add_primary_culture = cu:dixie
+		add_primary_culture = cu:franco_canadian
+		add_primary_culture = cu:anglo_canadian
+		add_primary_culture = cu:yankee
+		#generic formation
+		trigger_event = formation.17
+	}
 	}
 	ai_chance = {
 		base = 100
@@ -291,6 +318,9 @@ clu_cad_unite = {
 					}	
 				}
 			}
+			not = {
+				exists = c:CCC
+			}	
 		}
 	}
 	possible = {
@@ -309,6 +339,13 @@ clu_cad_unite = {
 				annex = c:CLU
 				change_tag = CCC
 			}
+		}
+		c:CCC = {
+			add_primary_culture = cu:dixie
+			add_primary_culture = cu:franco_canadian
+			add_primary_culture = cu:anglo_canadian
+			add_primary_culture = cu:yankee
+			trigger_event = formation.17
 		}
 	}
 	ai_chance = {
@@ -335,7 +372,10 @@ clu_can_unite = {
 			exists = c:CAN
 				c:CLU = {
 					is_subject_of = root
-				}	
+				}
+			not = {
+				exists = c:CCC
+			}		
 		}
 	}
 	possible = {
@@ -354,6 +394,13 @@ clu_can_unite = {
 				annex = c:CLU
 				change_tag = CCC
 			}
+		}
+		c:CCC = {
+			add_primary_culture = cu:dixie
+			add_primary_culture = cu:franco_canadian
+			add_primary_culture = cu:anglo_canadian
+			add_primary_culture = cu:yankee
+			trigger_event = formation.17
 		}
 	}
 	ai_chance = {
@@ -379,7 +426,10 @@ cad_can_unite = {
 			exists = c:CAN
 				c:CLU = {
 					is_subject_of = root
-				}	
+				}
+			not = {
+				exists = c:CCC
+			}		
 		}
 	}
 	possible = {
@@ -398,6 +448,13 @@ cad_can_unite = {
 				annex = c:CAD
 				change_tag = CCC
 			}
+		}
+		c:CCC = {
+			add_primary_culture = cu:dixie
+			add_primary_culture = cu:franco_canadian
+			add_primary_culture = cu:anglo_canadian
+			add_primary_culture = cu:yankee
+			trigger_event = formation.17
 		}
 	}
 	ai_chance = {

@@ -1,0 +1,29 @@
+﻿l_english:
+#laws
+je_sick_us_federal_law_desc:0 "Enact A law that each state must enforce (may cause states to secede)"
+#disrbution of power
+je_sick_us_federal_law_dop_oli_sb:0 "Enact Outlaw Voting"
+je_sick_us_federal_law_dop_land_sb:0 "Enact Land Voting System"
+je_sick_us_federal_law_dop_wel_sb:0 "Enact Wealth Voting System"
+je_sick_us_federal_law_dop_suf_sb:0 "Enact Popular Voting System"
+
+#citzenship
+sick_us_federal_law_cit_ethno_sb:0 "Enact Ethnostate Citizenship"
+sick_us_federal_law_cit_nat_sb:0 "Enact National Supremacy Citizenship"
+sick_us_federal_law_cit_seg_sb:0 "Enact Racial Segregation Citizenship"
+sick_us_federal_law_cit_cult_sb:0 "Enact Cultural Exclusion Citizenship"
+
+#Land Reform
+sick_us_federal_law_land_sef_sb:0 "Enact Serfdom Land Reform"
+sick_us_federal_law_land_ten_sb:0 "Enact Tenant Farming Land Reform"
+sick_us_federal_law_land_com_sb:0 "Enact Commercialized Land Reform"
+sick_us_federal_law_land_home_sb:0 "Enact Homesteading Land Reform"
+
+#econimie
+sick_us_federal_law_econ_bad_sb:0 "Enact Agricultural Economic Policy"
+sick_us_federal_law_econ_int_sb:0 "Enact Interventionism Economic Policy"
+sick_us_federal_law_econ_laz_sb:0 "Enact Laissez-Faire Economic Policy"
+
+#slaves
+je_sick_us_federal_law_slave_ban_sb:0 "Enact Slavery Banned"
+je_sick_us_federal_law_slave_allow_sb:0 "Enact Slavery Encouraged"
