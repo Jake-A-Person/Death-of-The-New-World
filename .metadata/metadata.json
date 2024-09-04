@@ -3,7 +3,7 @@
   "id" : "death.of.the.new.world",
   "short_description" : "What if the USA lost the war of 1812",
   "tags" : ["Alternative History"],
-  "picture": "thumbnail.jpg",
+  "picture": "thumbnail.png",
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true
