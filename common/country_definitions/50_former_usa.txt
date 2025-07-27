@@ -85,7 +85,7 @@ MIP = {
 }
 
 #arkansas
-ARK = {
+ARN = {
 	color = {170 152 142}
 
 	country_type = recognized

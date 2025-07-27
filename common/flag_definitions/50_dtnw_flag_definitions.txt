@@ -56,10 +56,10 @@ NYR = {
 	}
 }
 
-ARK = {
+ARN = {
 	flag_definition = {
-		coa = ARK
-		subject_canton = ARK
+		coa = ARN
+		subject_canton = ARN
 		priority = 1
 		}
 }

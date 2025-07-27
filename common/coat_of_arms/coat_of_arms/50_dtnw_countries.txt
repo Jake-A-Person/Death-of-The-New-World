@@ -160,7 +160,7 @@ NYR = {
 	}
 }
 
-ARK = {
+ARN = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"
 	color2 = "blue"

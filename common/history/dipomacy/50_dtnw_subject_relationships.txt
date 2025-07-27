@@ -20,7 +20,7 @@
     		type = grant_own_market
     	}
 		create_diplomatic_pact = {
-    		country = c:ARK
+    		country = c:ARN
     		type = protectorate
     	}
 		create_diplomatic_pact = {
@@ -74,7 +74,7 @@
 		
 		#oh markets
  		create_diplomatic_pact = {
-    		country = c:ARK
+    		country = c:ARN
     		type = grant_own_market
     	}
 		create_diplomatic_pact = {

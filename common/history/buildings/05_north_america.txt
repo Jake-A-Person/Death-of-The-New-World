@@ -561,13 +561,13 @@
 		}
 	}
 	s:STATE_ARKANSAS={
-		region_state:ARK={
+		region_state:ARN={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ARK"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARKANSAS"
 					}
@@ -580,7 +580,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ARK"
+						country="c:ARN"
 						levels=1
 						region="STATE_ARKANSAS"
 					}
