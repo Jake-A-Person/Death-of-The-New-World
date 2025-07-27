@@ -7798,7 +7798,7 @@ STATES = {
 	}
 	s:STATE_SOUTH_CAROLINA = {
 		create_state = {
-			country = c:USA
+			country = c:WAH
 			owned_provinces = { x31E5D4 xE2F040 x8E69FE xAF8C38 x2C6AA0 x47BF09 x007602 xF5B3A1 x7AAA59 x0070C0 xF83D99 x8998F6 xD641CB xF93340 x3B0FAE x6F7B23 x1FA379 x9B1B8B xD4D27E }
 		}
 
