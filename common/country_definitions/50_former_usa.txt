@@ -2,7 +2,7 @@
 MIS = {
 	color = { 91 110 121 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality	
 	
@@ -13,7 +13,7 @@ MIS = {
 MIL = {
 	color = { 97 114 127 }
 
-	country_type =	colonial
+	country_type =	recognized
 
 
 	tier = principality	
@@ -26,7 +26,7 @@ MIL = {
 LOL = {
 	color = { 147 130 110 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality	
 	
@@ -39,7 +39,7 @@ LOL = {
 WAH = {
 	color = { 20  20  240 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -52,7 +52,7 @@ WAH = {
 NYR = {
 	color = { 223  230  27 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = grand_principality
 	
@@ -64,7 +64,7 @@ NYR = {
 ALA = {
 	color = {250 100 100}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -76,7 +76,7 @@ ALA = {
 MIP = {
 	color = {65 75 51}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -88,7 +88,7 @@ MIP = {
 ARK = {
 	color = {170 152 142}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -100,7 +100,7 @@ ARK = {
 MWU = {
 	color = {100 240 100}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -112,7 +112,7 @@ MWU = {
 IOW = {
 	color = {120  120  200}
 	
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -124,7 +124,7 @@ IOW = {
 WIS = {
 	color = {100 240 100}
 	
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -137,6 +137,7 @@ WIS = {
 NEN = {
 	color = { 166  224  85 }
 	
+	#colonial so they can be a dominion
 	country_type = colonial
 	
 	tier = grand_principality
@@ -150,7 +151,7 @@ NEN = {
 TEN = {
 	color = {200 30 30}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -161,7 +162,7 @@ TEN = {
 INI = {
 	color = {100 100 230}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -172,7 +173,7 @@ INI = {
 ILL = {
 	color = {61 79 54}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -183,7 +184,7 @@ ILL = {
 OHI = {
 	color = {240 30 30}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
@@ -194,7 +195,7 @@ OHI = {
 KEN = {
 	color = {179 128 30}
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 
