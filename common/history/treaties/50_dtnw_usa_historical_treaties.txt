@@ -1,0 +1,240 @@
+﻿TREATIES = {
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:MIS
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:MIS
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:GRG
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:GRG
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:ALA
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:ALA
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:ARN
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:ARN
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:ILL
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:ILL
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:INI
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:INI
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:IOW
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:IOW
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:KEN
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:KEN
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:LOU
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:LOU
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:MIP
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:MIP
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:NYR
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:NYR
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:OHI
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:OHI
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:TEN
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:TEN
+			}
+		}
+	}
+	create_treaty = {
+		name = treaty_name_wah_transit_rights
+		first_country = c:WAH
+		second_country = c:UOM
+
+		is_draft = no
+		entered_into_force_on = 1836.1.1
+		binding_period = { years = 100 } # 100 years (whole game)
+
+		articles_to_create = {
+			{
+				article = transit_rights
+				source_country = c:WAH
+				target_country = c:UOM
+			}
+		}
+	}
+}
