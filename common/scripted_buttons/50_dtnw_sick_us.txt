@@ -31,7 +31,7 @@
 							has_law = law_type:law_anarchy
 						}
 					}			
-					count < 3
+					percent < 0.6
 				}
 			}
 			add = 100
@@ -137,7 +137,7 @@ je_sick_us_federal_law_dop_land_sb = {
 				not = {
 					has_law = law_type:law_landed_voting
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -234,7 +234,7 @@ je_sick_us_federal_law_dop_wel_sb = {
 				not = {
 					has_law = law_type:law_wealth_voting
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -338,7 +338,7 @@ je_sick_us_federal_law_dop_suf_sb = {
 						has_law = law_type:law_universal_suffrage	
 					}	
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -443,7 +443,7 @@ sick_us_federal_law_cit_ethno_sb= {
 				not = {
 					has_law = law_type:law_ethnostate
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -538,7 +538,7 @@ sick_us_federal_law_cit_nat_sb= {
 				not = {
 					has_law = law_type:law_national_supremacy
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -634,7 +634,7 @@ sick_us_federal_law_cit_seg_sb= {
 				not = {
 					has_law = law_type:law_racial_segregation
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -737,7 +737,7 @@ sick_us_federal_law_cit_cult_sb= {
 						has_law = law_type:law_multicultural
 					}	
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -854,7 +854,7 @@ sick_us_federal_law_econ_bad_sb= {
 					has_law = law_type:law_industry_banned
 					}		
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -966,7 +966,7 @@ sick_us_federal_law_econ_int_sb= {
 				not = {
 					has_law = law_type:law_interventionism
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1063,7 +1063,7 @@ sick_us_federal_law_econ_laz_sb= {
 				not = {
 					has_law = law_type:law_laissez_faire
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1160,7 +1160,7 @@ sick_us_federal_law_land_sef_sb= {
 				not = {
 					has_law = law_type:law_serfdom
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1256,7 +1256,7 @@ sick_us_federal_law_land_ten_sb= {
 				not = {
 					has_law = law_type:law_tenant_farmers
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1352,7 +1352,7 @@ sick_us_federal_law_land_com_sb= {
 				not = {
 					has_law = law_type:law_commercialized_agriculture
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1448,7 +1448,7 @@ sick_us_federal_law_land_home_sb= {
 				not = {
 					has_law = law_type:law_homesteading
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1545,7 +1545,7 @@ je_sick_us_federal_law_slave_ban_sb = {
 				not = {
 					has_law = law_type:law_slavery_banned
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100
@@ -1642,7 +1642,7 @@ je_sick_us_federal_law_slave_allow_sb = {
 				not = {
 					has_law = law_type:law_slavery_banned
 				}			
-				count < 3
+				percent < 0.6
 				}
 			}
 			add = 100

@@ -86,7 +86,7 @@ dtnw_sick_us.2 = {
 							not = {
 								has_law = law_type:law_slavery_banned
 							}
-					count > 2
+					percent < 0.6
 					}
 					}
 				}
@@ -147,7 +147,7 @@ dtnw_sick_us.3 = {
 									has_law = law_type:law_debt_slavery
 								}
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -397,7 +397,7 @@ dtnw_sick_us.5 = {
 									has_law = law_type:law_anarchy
 								}							
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -455,7 +455,7 @@ dtnw_sick_us.6 = {
 							not = {
 								has_law = law_type:law_landed_voting						
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -513,7 +513,7 @@ dtnw_sick_us.7 = {
 							not = {
 								has_law = law_type:law_wealth_voting						
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -574,7 +574,7 @@ dtnw_sick_us.8 = {
 									has_law = law_type:law_universal_suffrage	
 								}	
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -632,7 +632,7 @@ dtnw_sick_us.9 = {
 							not = {
 								has_law = law_type:law_ethnostate	
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -689,7 +689,7 @@ dtnw_sick_us.10 = {
 							not = {
 								has_law = law_type:law_national_supremacy	
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -746,7 +746,7 @@ dtnw_sick_us.11 = {
 							not = {
 								has_law = law_type:law_racial_segregation	
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -807,7 +807,7 @@ dtnw_sick_us.12 = {
 									has_law = law_type:law_multicultural
 								}						
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -869,7 +869,7 @@ dtnw_sick_us.13 = {
 									has_law = law_type:law_industry_banned
 								}							
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -926,7 +926,7 @@ dtnw_sick_us.14 = {
 							not = {
 								has_law = law_type:law_interventionism						
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -983,7 +983,7 @@ dtnw_sick_us.15 = {
 							not = {
 								has_law = law_type:law_laissez_faire
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -1040,7 +1040,7 @@ dtnw_sick_us.16 = {
 							not = {
 								has_law = law_type:law_serfdom
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -1097,7 +1097,7 @@ dtnw_sick_us.17 = {
 							not = {
 								has_law = law_type:law_tenant_farmers
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -1154,7 +1154,7 @@ dtnw_sick_us.18 = {
 							not = {
 								has_law = law_type:law_commercialized_agriculture
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
@@ -1211,7 +1211,7 @@ dtnw_sick_us.19 = {
 							not = {
 								has_law = law_type:law_homesteading
 							}
-					count > 2
+					percent < 0.6
 					}
 				}
 				}
